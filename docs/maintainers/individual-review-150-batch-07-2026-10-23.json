@@ -1711,18 +1711,20 @@
     {
       "id": "azure-data-tables-java",
       "disposition": "corrected",
-      "reviewNote": "Replaced uncompilable interface-style TableEntity example; clarified paging, concurrency and destructive scope.",
+      "reviewNote": "Replaced uncompilable interface-style TableEntity example; clarified paging, concurrency and destructive scope. Corrected setSelect to its List<String> signature.",
       "limitations": "Static complete-tree review; no runtime/API execution, Tessl result or independent upstream-license audit.",
       "files": [
         {
           "path": "skills/azure-data-tables-java/SKILL.md",
           "beforeSha256": "4d34d6c7d04a425a6d06a195a2767f0a998dd3a98a5ef7d0172bb2671840203d",
-          "afterSha256": "b5a9a312c218a3c2548f1c6842067633fe02db40a0bcd6670ba239b15bb1826c",
+          "afterSha256": "c1e4af9cb134dc686df091742e91782e4d5a4d8c1d48a7788e1f91b5f0999b24",
           "gitMode": "100644"
         }
       ],
       "sources": [
-        "https://learn.microsoft.com/en-us/java/api/com.azure.data.tables.models.tableentity?view=azure-java-stable"
+        "https://learn.microsoft.com/en-us/java/api/com.azure.data.tables.models.tableentity?view=azure-java-stable",
+        "https://learn.microsoft.com/en-us/java/api/com.azure.data.tables.models.listentitiesoptions?view=azure-java-stable",
+        "https://learn.microsoft.com/en-us/java/api/com.azure.data.tables.tableasyncclient?view=azure-java-stable"
       ]
     },
     {

@@ -177,7 +177,7 @@ for (TableEntity entity : tableClient.listEntities()) {
 // With filtering and selection
 ListEntitiesOptions options = new ListEntitiesOptions()
     .setFilter("PartitionKey eq 'sales'")
-    .setSelect("Name", "Price");
+    .setSelect(java.util.Arrays.asList("Name", "Price"));
 
 for (TableEntity entity : tableClient.listEntities(options, null, null)) {
     System.out.printf("%s: %.2f%n",
