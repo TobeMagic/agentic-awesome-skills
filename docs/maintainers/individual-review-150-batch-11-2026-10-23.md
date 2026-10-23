@@ -14,7 +14,7 @@ Final committed-head local checks and GitHub checks are reported on the batch pu
 
 ### esl-price-sync — corrected
 
-Corrected unsupported battery/radio guarantees; canonicalized complete label-content hash including currency/barcode/tag identity and rejected equal-version conflicts; added battery-model input guards.
+Corrected unsupported battery/radio guarantees; canonicalized complete label-content hash including currency/barcode/tag identity and rejected equal-version conflicts; added battery-model input guards. Rejected nonfinite hash/battery inputs; refreshed only the reviewed ESL fixture and strengthened replay/conflict and currency/barcode/tag hash regressions.
 
 Limitations: Illustrative single-worker model; requires vendor adapter, transactional persistence and measured consumption. No physical fleet or radio verification.
 

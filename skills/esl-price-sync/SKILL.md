@@ -87,7 +87,7 @@ def compute_sku_hash(item: dict) -> str:
     import json
     payload = json.dumps({key: item[key] for key in
                          ("sku", "price", "promo_price", "currency", "uom", "barcode", "template", "tag_id")},
-                         sort_keys=True, separators=(",", ":"))
+                         sort_keys=True, separators=(",", ":"), allow_nan=False)
     return hashlib.sha256(payload.encode('utf-8')).hexdigest()
 
 class ESLDeltaSyncPipeline:
@@ -172,6 +172,10 @@ def estimate_tag_battery_years(
     uAh_per_refresh: float = 18.0,
     standby_uA: float = 1.2
 ) -> float:
+    import math
+    values = (updates_per_day, ambient_temp_celsius, battery_mah, uAh_per_refresh, standby_uA)
+    if any(isinstance(v, bool) or not isinstance(v, (int, float)) or not math.isfinite(v) for v in values):
+        raise ValueError("Finite numeric battery assumptions required")
     if updates_per_day < 0 or battery_mah <= 0 or uAh_per_refresh <= 0 or standby_uA < 0:
         raise ValueError("Nonnegative usage and positive capacity/refresh cost required")
     # Temperature de-rating factor (freezer sections de-rate capacity significantly)

@@ -6,14 +6,14 @@
     {
       "id": "esl-price-sync",
       "disposition": "corrected",
-      "reviewNote": "Corrected unsupported battery/radio guarantees; canonicalized complete label-content hash including currency/barcode/tag identity and rejected equal-version conflicts; added battery-model input guards.",
+      "reviewNote": "Corrected unsupported battery/radio guarantees; canonicalized complete label-content hash including currency/barcode/tag identity and rejected equal-version conflicts; added battery-model input guards. Rejected nonfinite hash/battery inputs; refreshed only the reviewed ESL fixture and strengthened replay/conflict and currency/barcode/tag hash regressions.",
       "limitations": "Illustrative single-worker model; requires vendor adapter, transactional persistence and measured consumption. No physical fleet or radio verification.",
       "sources": [],
       "files": [
         {
           "path": "skills/esl-price-sync/SKILL.md",
           "beforeSha256": "577d93c74c4d28267594187519ac9771855112f69d670d4d4f9d67273dcc3bf0",
-          "afterSha256": "bf66a47e17a614612defd4956b9524f77d28f97ed65310ad11744815f1c5a7d0",
+          "afterSha256": "d21aa994dab32e30d1cbe45c441ea906ed1fbf515f947414a15898259b358d46",
           "beforeGitMode": "100644",
           "afterGitMode": "100644"
         }
