@@ -49,10 +49,11 @@ Lighthouse category scores and navigation lab metrics are not field Core Web Vit
 ## 1. Files this skill adds
 
 ```
-apps/web/                          (or your app root)
-├── lighthouserc.cjs               ← the gate: budgets + assertions + collect settings
-├── package.json                   ← "lhci": "lhci autorun --config=./lighthouserc.cjs"
-└── .github/workflows/lighthouse.yml  ← PR-blocking CI job (build → start → lhci → upload)
+repository/
+├── .github/workflows/lighthouse.yml  ← workflow must be at repository root
+└── apps/web/                        ← or your app root
+    ├── lighthouserc.cjs              ← budgets, assertions and collect settings
+    └── package.json                 ← "lhci": "lhci autorun --config=./lighthouserc.cjs"
 ```
 
 Plus a dev dependency: `@lhci/cli`.

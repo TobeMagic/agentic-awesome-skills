@@ -2314,7 +2314,7 @@
     {
       "id": "frontend-lighthouse",
       "disposition": "corrected",
-      "reviewNote": "Fixed misplaced aggregation option with supported per-assertion median, removed nonexistent default INP audit and TBT=INP claim; qualified noise/field/accessibility guarantees and actual required-check/path/dependency triggers. Removed residual experimental INP audit and field-certification wording from comments/checklist.",
+      "reviewNote": "Fixed misplaced aggregation option with supported per-assertion median, removed nonexistent default INP audit and TBT=INP claim; qualified noise/field/accessibility guarantees and actual required-check/path/dependency triggers. Removed residual experimental INP audit and field-certification wording from comments/checklist. Corrected the file tree to put the GitHub workflow at repository root, not inside the application directory.",
       "limitations": "Static complete-tree review; no live service or runtime verification claimed.",
       "sources": [
         "https://raw.githubusercontent.com/GoogleChrome/lighthouse-ci/main/docs/configuration.md"
@@ -2323,7 +2323,7 @@
         {
           "path": "skills/frontend-lighthouse/SKILL.md",
           "beforeSha256": "15d52359bc4befe8ddac99c651cae61ee299fc0cd070466cb6ab28d7fb3ce54b",
-          "afterSha256": "b99078168e4a810e5483b93e47f4972b86bf3c4fe6c7f9ccc4515adeee7e8369",
+          "afterSha256": "6878c2cc9dc236e7022a4d2230429984581867da35f9a4103c89157551e79e92",
           "beforeGitMode": "100644",
           "afterGitMode": "100644"
         }

@@ -944,7 +944,7 @@ Files read: 2. Full hashes/modes are in the companion JSON.
 
 ### frontend-lighthouse — corrected
 
-Fixed misplaced aggregation option with supported per-assertion median, removed nonexistent default INP audit and TBT=INP claim; qualified noise/field/accessibility guarantees and actual required-check/path/dependency triggers. Removed residual experimental INP audit and field-certification wording from comments/checklist.
+Fixed misplaced aggregation option with supported per-assertion median, removed nonexistent default INP audit and TBT=INP claim; qualified noise/field/accessibility guarantees and actual required-check/path/dependency triggers. Removed residual experimental INP audit and field-certification wording from comments/checklist. Corrected the file tree to put the GitHub workflow at repository root, not inside the application directory.
 
 Limitations: Static complete-tree review; no live service or runtime verification claimed.
 
