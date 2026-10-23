@@ -19,7 +19,7 @@ The exact source inventory contains **2,641 root skill trees and 2,743 nested/to
 
 ## Verification and limits
 
-`npm run validate` passed for all 2,743 entrypoints using the existing Python 3.14 interpreter with PyYAML; the default Python 3.15 initially lacked that dependency. `npm run validate:references`, `npm run security:docs` and six offline example regressions passed. Regressions execute review-controlled fixtures, compare them inertly with the published examples, and use synthetic data/transport. They test HMAC byte/secret binding, missing secrets, HTTP-200 quota messages, malformed payloads, key overrides and redacted failures; no provider was called. Committed-head isolated `pr:preflight` remains pending until recorded separately.
+`npm run validate` passed for all 2,743 entrypoints using the existing Python 3.14 interpreter with PyYAML; the default Python 3.15 initially lacked that dependency. `npm run validate:references`, `npm run security:docs` and six offline example regressions passed. Regressions execute review-controlled fixtures, compare them inertly with the published examples, and use synthetic data/transport. They test HMAC byte/secret binding, missing secrets, HTTP-200 quota messages, malformed payloads, key overrides and redacted failures; no provider was called. The full isolated `pr:preflight` passed on implementation head `c129f34f75e14404aff6dd59978eb93cd4dea8a2`. This report-only receipt update is checked again before PR creation; the PR records final-head evidence.
 
 No live infrastructure, database, payment, GPU/browser, legal/medical/financial result or upstream license certification is claimed. Existing source/license declarations are preserved. CI/Tessl results and exact-head merge authority remain separate; no automated review pass is inferred. Generated mirrors remain at their release snapshot.
 
@@ -112,7 +112,7 @@ No live infrastructure, database, payment, GPU/browser, legal/medical/financial 
 | `nextjs-best-practices` | corrected | Replaced stale cached-by-default fetch advice, added explicit cache/version model check and authorization/shared-cache boundaries, and qualified Edge choice. |
 | `obsidian-cli` | retained | Retained: provides targeting, help/version discovery, read-back and authorization limits for writes, eval, reload and exports. |
 | `squirrel` | corrected | Limited strike-three reversion to identifiable own changes and required preservation of unrelated work. |
-| `odoo-backup-strategy` | corrected | Replaced production drop/filestore deletion restore with new isolated targets; added failure handling, privacy, consistent dump/store interval and recovery-tested retention; adjusted risk to high. |
+| `odoo-backup-strategy` | corrected | Replaced production drop/filestore deletion restore with new isolated targets; added failure handling, privacy, consistent dump/store interval and recovery-tested retention; classified final backup/restore risk as critical. |
 | `to-prd` | retained | Retained: conversation synthesis/template/testing seams and publication workflow are concrete, with explicit external-action approval limitation and preserved attribution. |
 | `fp-taskeither-ref` | retained | Retained: lazy execution and fallible-boundary limitations are explicit; examples validate HTTP/schema and explain ApplyPar/cancellation limits. |
 | `verify-citations` | retained | Retained: concrete verification/reporting distinguishes coverage from truth and explicitly requires approval before third-party transmission. |

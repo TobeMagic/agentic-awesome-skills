@@ -36,7 +36,7 @@
     "validateReferences": "passed",
     "securityDocs": "passed",
     "offlineExampleRegressions": "6 passed; trusted inert fixtures, synthetic transport, no network",
-    "prPreflight": "pending on committed source head"
+    "prPreflight": "passed full isolated component plan on implementation head c129f34f75e14404aff6dd59978eb93cd4dea8a2; final report-only receipt update is validated again before PR creation"
   },
   "limits": [
     "No live cloud, database, payment, provider, browser, medical/legal or financial outcomes validated.",
@@ -1458,7 +1458,7 @@
     {
       "id": "odoo-backup-strategy",
       "disposition": "corrected",
-      "reviewNote": "Replaced production drop/filestore deletion restore with new isolated targets; added failure handling, privacy, consistent dump/store interval and recovery-tested retention; adjusted risk to high.",
+      "reviewNote": "Replaced production drop/filestore deletion restore with new isolated targets; added failure handling, privacy, consistent dump/store interval and recovery-tested retention; classified final backup/restore risk as critical.",
       "limitations": "Example remains a deployment-adapted procedure, not a tested backup; quiescing writers, archive trust, ownership and restore startup must be established locally.",
       "files": [
         {
