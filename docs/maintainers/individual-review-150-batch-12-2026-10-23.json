@@ -22,7 +22,9 @@
       "11 bundled skill-porter temporary-fixture tests passed without network",
       "7 Apify runner copies passed mocked-fetch bearer/deadline/cap and private exclusive CSV export regressions (heterogeneous keys, >200 characters, multiline cells, formula guard, overwrite refusal)",
       "Multi-source validator passed valid ledger and six unhashable-type regressions plus URL normalization/credential URL rejection",
-      "Wiki helper four temporary-directory offline cases passed (existing destination, shell metacharacters, missing option value, broken symlink)"
+      "Wiki helper four temporary-directory offline cases passed (existing destination, shell metacharacters, missing option value, broken symlink)",
+      "Nine plugin compatibility tests passed after updating the real claude-code-expert sample expectation: Claude supported; Codex blocked only by target-specific home paths. Classifier and blocking policy unchanged.",
+      "PostgreSQL mocked connection fixtures passed for unchanged SHOW query, display/truncation bounds, readonly session, TLS default and cleanup."
     ],
     "notPerformed": [
       "No live cloud/API/Actor/database/browser/device/security-target execution",
@@ -30,6 +32,16 @@
       "No independent upstream authorship/license-chain audit; all declared provenance and bundled licenses preserved",
       "No Tessl review pass or exact-current-head maintainer merge attestation claimed",
       "No whole-catalog certification or generated/mirror synchronization; protected canonical sync owns generated state"
+    ],
+    "trustedTestChanges": [
+      {
+        "path": "tools/scripts/tests/test_plugin_compatibility.py",
+        "beforeSha256": "562911018c751dbf58a4aa427cf831f3126ba19c4647bee9439b09f3512600df",
+        "afterSha256": "3906a7efc8bb410cc12c8c9738c38daa52a5be859b278beb56cadbd46638f669",
+        "beforeGitMode": "100644",
+        "afterGitMode": "100644",
+        "reason": "Actual reviewed source no longer contains absolute host paths; retain specific Codex home-path blocking assertion and all independent unsafe fixture tests."
+      }
     ]
   },
   "records": [

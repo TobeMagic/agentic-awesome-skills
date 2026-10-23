@@ -15,6 +15,9 @@ Each assigned source and support file was read in full as inert material. Findin
 - Multi-source validator passed valid ledger and six unhashable-type regressions plus URL normalization/credential URL rejection
 - Wiki helper four temporary-directory offline cases passed (existing destination, shell metacharacters, missing option value, broken symlink)
 
+- Nine plugin compatibility tests passed with the current Claude-only source fixture; classifier and blocking policy unchanged.
+- PostgreSQL mocked connection/SHOW/display-bound/TLS/cleanup fixtures passed.
+
 Final exact-head static checks and their results belong in the PR body after the source/report commit. This report does not fabricate their result or serve as merge authority.
 
 - No live cloud/API/Actor/database/browser/device/security-target execution
