@@ -2,10 +2,15 @@
 name: web-security-testing
 description: "Web application security testing workflow for OWASP Top 10 vulnerabilities including injection, XSS, authentication flaws, and access control issues."
 category: granular-workflow-bundle
-risk: critical
+risk: offensive
 source: personal
 date_added: "2026-02-27"
 ---
+
+> **⚠️ AUTHORIZED USE ONLY**
+> This skill is for educational purposes or authorized security assessments only.
+> You must have explicit, written permission from the system owner before using this tool.
+> Misuse of this tool is illegal and strictly prohibited.
 
 # Web Security Testing Workflow
 
@@ -22,9 +27,18 @@ Use this workflow when:
 - Validating security controls
 - Bug bounty hunting
 
+> **Mandatory confirmation gate**
+> Before running any command that probes, exploits, changes, persists on, extracts data from, or attempts credential access against a target:
+> 1. Ask the user to state the exact target URL, IP, account, or resource.
+> 2. Ask the user to confirm written authorization and the permitted scope.
+> 3. Show the exact command(s) and explain their expected effect.
+> 4. Wait for explicit confirmation in the current conversation.
+>
+> Without that confirmation, remain read-only and provide defensive guidance only. Prefer a sandbox, disposable VM, or controlled lab.
+
 ## Authorized assessment scope
 
-Before active tests, establish authorized hosts, accounts, test window, request limits, excluded paths and stop conditions. Bug-bounty participation alone does not authorize every listed test. Use synthetic accounts/data and non-destructive probes; credential stuffing, brute-force, stored payloads and automated scanners require explicit scope. Stop on instability or unexpected sensitive data, retain only redacted minimal evidence, and report untested areas instead of marking full coverage.
+Establish test window, request limits, excluded paths and stop conditions in addition to the mandatory per-command gate above. Bug-bounty participation alone does not authorize every listed test. Use synthetic accounts/data and non-destructive probes; credential stuffing, brute-force, stored payloads and automated scanners require explicit scope. Stop on instability or unexpected sensitive data, retain only redacted minimal evidence, and report untested areas instead of marking full coverage.
 
 ## Workflow Phases
 

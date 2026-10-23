@@ -22,7 +22,7 @@ plugin:
 
 ## Overview
 
-A Claude Code skill that auto-routes subtasks to the cheapest model that can handle them (Haiku for grunt work, Sonnet for scoped reasoning, Opus only for synthesis), then logs every routed task to a local NDJSON with real token + cost numbers. Includes an A/B test subcommand that runs the same task across multiple tiers and scores quality, so the routing decisions are verified against the user's real workload — not estimated.
+The upstream package advertises model-tier routing, local NDJSON usage logs and an A/B comparison command. Evaluate those capabilities only in an installed, reviewed revision with the user's authorized model budget and actual workload. Task difficulty, response-quality rubrics and reported costs remain estimates unless independently measured.
 
 This entry describes the upstream workflow; it does not bundle its commands or measurement implementation. Verify the installed revision, supported models and actual routing behavior before relying on a report. A user's workload and billing plan determine whether routing reduces paid usage.
 

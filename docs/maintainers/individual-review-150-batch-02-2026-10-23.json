@@ -610,11 +610,12 @@
           "path": "skills/tokenwise/SKILL.md",
           "gitMode": "100644",
           "beforeSha256": "0d7cce9508933ece99e834e00d5b0c63d577a68144b27cd6adb36fc0e6d88402",
-          "afterSha256": "f4107dd94aef0b7bfaaa68b5aec937595e091298313467803ec190ee4585b483"
+          "afterSha256": "50649c5e0783f28f330537bdfdce0c7dc1e5ad01539c1e231b8ea5b70a73b555"
         }
       ],
       "sources": [],
-      "sourceTreeBefore": "f603d901d399ce4409502de0dfc9a4481aaffa61"
+      "sourceTreeBefore": "f603d901d399ce4409502de0dfc9a4481aaffa61",
+      "integrationReviewNote": "Parent also removed residual verified-cost and automatic-routing guarantees in the opening paragraph."
     },
     {
       "id": "cdk-patterns",
@@ -1778,11 +1779,12 @@
           "path": "skills/web-security-testing/SKILL.md",
           "gitMode": "100644",
           "beforeSha256": "e158b8653faa017444350909683fcbf110ee16b1d11a820b7b0cff558c1c60e7",
-          "afterSha256": "5f218c5d0f97366f5ee68cd2bc8ed42b93e674e7fb5c43945e36efb05a25b25f"
+          "afterSha256": "bef05ce1da369c5141b99778142fee00c8427321c9fd276f912388688e4d0b7c"
         }
       ],
       "sources": [],
-      "sourceTreeBefore": "c8283809547ed580376d07059c1e5735f392492c"
+      "sourceTreeBefore": "c8283809547ed580376d07059c1e5735f392492c",
+      "integrationReviewNote": "Parent classified active target assessment as offensive and added the exact authorized-use disclaimer and per-command current-conversation confirmation required by repository policy."
     },
     {
       "id": "vexor-cli",
