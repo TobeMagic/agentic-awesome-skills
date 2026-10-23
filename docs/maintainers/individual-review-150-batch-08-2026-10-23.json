@@ -281,7 +281,7 @@
           "path": "skills/ollama-stack/SKILL.md",
           "gitMode": "100644",
           "beforeSha256": "71babbe97d4bb64d183f80006ed07a937152f627001731fac943820c222c2008",
-          "afterSha256": "7ed8ac8aa34353136ae332798c01ae240680ab8adc0b08f742d2b25f1f2131c1",
+          "afterSha256": "2a34e3a63b1b4c24c40b56f648fd98f83bd22f7e800c1b718698967481f07a6d",
           "readInFull": true,
           "beforeGitMode": "100644",
           "afterGitMode": "100644"

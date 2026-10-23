@@ -220,9 +220,12 @@ print(f"Embedding dimensions: {len(result['embeddings'][0])}")
 ### OpenAI SDK Compatibility
 
 ```python
+import os
 from openai import OpenAI
 
-client = OpenAI(base_url="http://localhost:11434/v1", api_key="ollama")  # local endpoint placeholder
+# Configure OLLAMA_CLIENT_KEY privately for this endpoint. Local unauthenticated
+# Ollama ignores the SDK-required value; it is not access control.
+client = OpenAI(base_url="http://localhost:11434/v1", api_key=os.environ["OLLAMA_CLIENT_KEY"])
 
 response = client.chat.completions.create(
     model="llama3.1:8b",
