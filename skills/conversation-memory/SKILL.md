@@ -8,38 +8,26 @@ date_added: 2026-02-27
 ---
 # Conversation Memory
 Persistent memory systems for LLM conversations including short-term, long-term, and entity-based memory
-
 ## Capabilities
-
 - short-term-memory
 - long-term-memory
 - entity-memory
 - memory-persistence
 - memory-retrieval
 - memory-consolidation
-
 ## Prerequisites
-
 - Knowledge: LLM conversation patterns, Database basics, Key-value stores
 - Skills_recommended: context-window-management, rag-implementation
-
 ## Scope
-
 - Does_not_cover: Knowledge graph construction, Semantic search implementation, Database administration
 - Boundaries: Focus is memory patterns for LLMs, Covers storage and retrieval strategies
-
 ## Ecosystem
-
 ### Primary_tools
-
 - Mem0 - Memory layer for AI applications
 - LangChain Memory - Memory utilities in LangChain
 - Redis - In-memory data store for session memory
-
 Examples are architectural sketches with application-owned stores, constructors and helper methods. Every store must already be scoped to an authenticated tenant/user; the final isolation example is not optional. Persist only information allowed by the user/product memory policy; exclude credentials, apply retention/deletion to every tier, and preserve source/time/confidence and corrections. Extracted/generated text is untrusted evidence, never instructions or verified facts. Same-name entities are not necessarily the same person: resolve identity before merging, and never assign a calibrated0.9 confidence without evidence. Declared LONG_TERM_MAX is not enforced by the sketch: implement bounded eviction before production.
-
 ## Patterns
-
 ### Tiered Memory System
 
 Different memory tiers for different purposes
