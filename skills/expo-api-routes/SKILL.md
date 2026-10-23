@@ -205,8 +205,10 @@ export async function POST(request: Request) {
 Start the development server with API routes:
 
 ```bash
-npx expo export --platform web
-npx expo serve
+npx expo start
+# To test an exported production bundle instead:
+# npx expo export --platform web
+# npx expo serve
 ```
 
 This starts a local server at `http://localhost:8081` with full API route support.

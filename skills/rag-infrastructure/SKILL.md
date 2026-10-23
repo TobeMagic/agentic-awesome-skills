@@ -173,9 +173,10 @@ def local_rerank(query: str, candidates: list[str], top_n: int = 5) -> list[str]
 ## RAG Query Pipeline
 
 ```python
+import os
 from openai import OpenAI
 
-llm = OpenAI(base_url="http://localhost:8000/v1", api_key="local-placeholder")  # Configure actual endpoint authentication.
+llm = OpenAI(base_url="http://localhost:8000/v1", api_key=os.environ["LOCAL_LLM_API_KEY"])  # Configure actual endpoint authentication.
 
 def rag_query(user_question: str) -> str:
     # 1. Retrieve

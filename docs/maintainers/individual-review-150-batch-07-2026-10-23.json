@@ -568,7 +568,7 @@
         {
           "path": "skills/rag-infrastructure/SKILL.md",
           "beforeSha256": "f028ea32c14a29139c462599338b3345978522cdb69bd40e98251cd733558602",
-          "afterSha256": "f915dadf2899543f9d19de8bceae80ac7d4d7988bb7b1449c96a6fc20e105487",
+          "afterSha256": "5187c4aa587abf92ab048116cfe1f124e0d1551032c28469d82720550a52879c",
           "gitMode": "100644"
         }
       ],
@@ -2436,7 +2436,7 @@
         {
           "path": "skills/expo-api-routes/SKILL.md",
           "beforeSha256": "0719259c8a2145fe8f094924bfa990c6c09aab8a0bb54f97d4500271e93087f0",
-          "afterSha256": "d39bbf0b91ef2f977d65ed8ed2bdd42b23aa1911ff38b61adb9bc551ca983d7f",
+          "afterSha256": "fd4efa495abefb12b775b6ef83a86b11104934121433fd7425c7e818f84475bb",
           "gitMode": "100644"
         },
         {
