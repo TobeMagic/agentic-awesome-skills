@@ -1209,3 +1209,5 @@ Repair duplicate const and backwards scroll lifecycle; remove focus pollution, i
 Limits: Complete root and guide; fragments not browser or assistive-technology certified.
 
 Files fully read: 2. Sources: Complete tracked source tree.
+
+Follow-up trusted-fixture validation: reviewed the complete OneRoster inline block against its inert snapshot, refreshed only that snapshot, and passed all 14 security-boundary regressions with Python 3.14. New ZIP fixtures cover multi-org reference resolution, redacted missing references, partial-only success status and strict invalid UTF-8 rejection.

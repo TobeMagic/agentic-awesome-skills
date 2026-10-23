@@ -3199,6 +3199,7 @@
     "script-fixtures": "Both changed Python scripts compile; empty directories yield passed:null/not-assessed; SEO decorative alt accepted and absent alt flagged.",
     "runtime": "Source-only review. No SDK/cloud/DB/platform runtime certification; bundled instructions were not executed.",
     "merge-review": "Tessl/manual exact-head merge attestation pending; no merge authority claimed.",
-    "full-preflight": "Parent will run after handoff."
+    "full-preflight": "Parent will run after handoff.",
+    "targeted-security-boundaries": "14 tests passed with Python3.14; trusted OneRoster snapshot compared in full and refreshed; new real ZIP fixtures cover valid multi-org references, redacted missing reference, PARTIAL_CHECKS_ONLY and invalid UTF-8 rejection."
   }
 }
