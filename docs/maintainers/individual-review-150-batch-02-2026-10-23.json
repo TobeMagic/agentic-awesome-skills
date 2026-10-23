@@ -659,11 +659,12 @@
           "path": "skills/videodb-skills/SKILL.md",
           "gitMode": "100644",
           "beforeSha256": "10658dc69ee5e7ae38a22a306d1bf0534ad537ca01a092f8f35682a041cc953a",
-          "afterSha256": "e07be51d215cee7e99f99898d56ec1cd3b948a28a86fa57ed3759ea51ccb7ae5"
+          "afterSha256": "bbe1a449ee861f9337a316d6b98ac4cc4d7c4facf7d8a21a720ff8aab3fd4ae3"
         }
       ],
       "sources": [],
-      "sourceTreeBefore": "d9bfe5830db1dbc9360da1d7731eef87a24afc26"
+      "sourceTreeBefore": "d9bfe5830db1dbc9360da1d7731eef87a24afc26",
+      "integrationReviewNote": "Hosted evidence flagged the quoted placeholder as a hardcoded credential. Replaced with non-echoed interactive environment input; no scanner rule changed. Parent classified hosted uploads/capture as critical."
     },
     {
       "id": "mirrord",

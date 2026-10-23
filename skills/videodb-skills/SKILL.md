@@ -2,7 +2,7 @@
 name: videodb-skills
 description: "Upload, stream, search, edit, transcribe, and generate AI video and audio using the VideoDB SDK."
 category: media
-risk: safe
+risk: critical
 source: community
 tags: "[video, editing, transcription, subtitles, search, streaming, ai-generation, media]"
 date_added: "2026-02-27"
@@ -44,7 +44,9 @@ The external skill may guide API key setup and SDK installation. Verify current 
 Alternatively, set the API key manually:
 
 ```bash
-export VIDEO_DB_API_KEY="<provider-issued-key>"
+read -rsp "VideoDB API key: " VIDEO_DB_API_KEY
+echo
+export VIDEO_DB_API_KEY
 ```
 
 ### Step 3: Install the SDK
