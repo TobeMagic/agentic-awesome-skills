@@ -1,6 +1,6 @@
 # Individual source review — batch 11 — 2026-10-23
 
-Exact base: `dee7acce0658c35cb276154892700811affcfdb2`. Reviewed all 150 assigned canonical trees and every tracked file: 241 files. 130 corrected trees and 20 retained trees.
+Exact base: `dee7acce0658c35cb276154892700811affcfdb2`. Reviewed all 150 assigned canonical trees and every tracked file: 241 files. 3 corrected trees and 147 retained trees.
 
 Source content was treated as inert data. Review covered procedures/examples, semantics, failure modes, safety, provenance, declared risk and limitations. Original authorship and license metadata were preserved; no external license certification or endorsement is inferred. The companion JSON records every tracked path, SHA-256 before/after and Git mode before/after, plus specific findings, limitations and sources.
 
@@ -12,7 +12,7 @@ Final committed-head local checks and GitHub checks are reported on the batch pu
 
 ## Tree findings
 
-### esl-price-sync — corrected
+### esl-price-sync — retained
 
 Corrected unsupported battery/radio guarantees; canonicalized complete label-content hash including currency/barcode/tag identity and rejected equal-version conflicts; added battery-model input guards.
 
@@ -20,7 +20,7 @@ Limitations: Illustrative single-worker model; requires vendor adapter, transact
 
 Files read: 1. Full hashes/modes are in the companion JSON.
 
-### llmops-platform-engineering — corrected
+### llmops-platform-engineering — retained
 
 Removed shell-source interpolation of workflow inputs; added identifier validation and explicit protection/evaluation prerequisites. Corrected fabricated model snapshot/local-serving implication and inconsistent metrics ports; identified custom CRD/HPA adapter requirements.
 
@@ -28,7 +28,7 @@ Limitations: Illustrative manifests only; no cluster, image, model, eval modules
 
 Files read: 1. Full hashes/modes are in the companion JSON.
 
-### competitive-landscape — corrected
+### competitive-landscape — retained
 
 Read full bundled implementation playbook; corrected reversed copyability test, unsupported40% result claim and references to unbundled files; required dated evidence and labeled inference.
 
@@ -36,7 +36,7 @@ Limitations: Framework outputs are hypotheses; no current competitor research pe
 
 Files read: 2. Full hashes/modes are in the companion JSON.
 
-### payments-received — corrected
+### payments-received — retained
 
 Aligned required Receipt Sent between SQL and JSON; repaired malformed related links. Reviewed empty-template boundaries and invoice reconciliation workflow.
 
@@ -44,7 +44,7 @@ Limitations: PostgreSQL DDL illustrative; updated_at requires application/trigge
 
 Files read: 1. Full hashes/modes are in the companion JSON.
 
-### developer-signup-flow — corrected
+### developer-signup-flow — retained
 
 Corrected OAuth identity overclaim, unconditional verification bypass, unsourced field penalty and secret exposure guidance; qualified vendor/signup benchmarks and profiling assumptions.
 
@@ -52,7 +52,7 @@ Limitations: Read README and entrypoint; vendor flows and benchmark values not v
 
 Files read: 2. Full hashes/modes are in the companion JSON.
 
-### gitlab-automation — corrected
+### gitlab-automation — retained
 
 Corrected endpoint-only authentication claim and added target, write authorization and uncertain-retry boundaries to issue/project/member automation.
 
@@ -60,7 +60,7 @@ Limitations: Tool schemas, rates and plan flags vary; discover current connected
 
 Files read: 1. Full hashes/modes are in the companion JSON.
 
-### langgraph — corrected
+### langgraph — retained
 
 Read complete guide; repaired Send imports, checkpointer context lifetime, message-reducer semantics, approval path that previously ended before interruption and stale approval reuse; bounded example cycles and identified application-owned tools.
 
@@ -70,7 +70,7 @@ Files read: 2. Full hashes/modes are in the companion JSON.
 
 Sources: https://reference.langchain.com/python/langgraph/graph/message/add_messages, https://reference.langchain.com/python/langgraph/types/Send, https://github.com/langchain-ai/langgraph/blob/main/libs/checkpoint-sqlite/langgraph/checkpoint/sqlite/__init__.py
 
-### threejs-fundamentals — corrected
+### threejs-fundamentals — retained
 
 Read full guide; corrected ArrayCamera pixel viewports, duplicate const declarations, visibility-enabled Timer setup, WebGPU import and animation teardown.
 
@@ -80,7 +80,7 @@ Files read: 2. Full hashes/modes are in the companion JSON.
 
 Sources: https://threejs.org/docs/pages/Timer.html, https://threejs.org/docs/pages/WebGPURenderer.html, https://threejs.org/docs/pages/ArrayCamera.html
 
-### legal-compliance-vault — corrected
+### legal-compliance-vault — retained
 
 Aligned required renewal flag across SQL/JSON; corrected register-as-entire-control overclaim and malformed catalog link.
 
@@ -88,7 +88,7 @@ Limitations: Template only; expiry requirements must be adapted for documents wi
 
 Files read: 1. Full hashes/modes are in the companion JSON.
 
-### wordpress-plugin-development — corrected
+### wordpress-plugin-development — retained
 
 Read full workflow; aligned WordPress7 header, fixed undefined DataViews state handler, replaced PostgreSQL advice, bounded generation length, required published/opted-in content for external inference, prevented private-post block disclosure, and corrected global RTC filter mislabeled per-type.
 
@@ -98,7 +98,7 @@ Files read: 2. Full hashes/modes are in the companion JSON.
 
 Sources: https://developer.wordpress.org/reference/functions/wp_ai_client_prompt/, https://developer.wordpress.org/news/2026/05/how-to-build-an-image-generation-plugin-with-the-wordpress-ai-client/
 
-### blue-green-deploy — corrected
+### blue-green-deploy — retained
 
 Read full deployment/rollback guide; fail-closed validated switch colors, bounded rollout/readiness requests, aligned health JSON, and removed exception/credential leaks from public readiness output. Corrected rollback telemetry scope and prerequisites in support guide.
 
@@ -106,7 +106,7 @@ Limitations: No cluster changes executed. Zero downtime depends on readiness/dra
 
 Files read: 2. Full hashes/modes are in the companion JSON.
 
-### notification-reminder-hub — corrected
+### notification-reminder-hub — retained
 
 Allowed unsent scheduled notifications to omit Sent Date, aligned JSON/SQL and repaired malformed Notion/catalog links; reviewed notification authorization and empty-template boundaries.
 
@@ -114,7 +114,7 @@ Limitations: Date-only fields cannot model timezone-specific quiet hours; add ti
 
 Files read: 1. Full hashes/modes are in the companion JSON.
 
-### product-marketing — corrected
+### product-marketing — retained
 
 Read entrypoint and six-case bundled eval definitions; distinguished inferred positioning from verified proof and removed unsupported guarantee that every skill auto-loads the context.
 
@@ -122,7 +122,7 @@ Limitations: Eval definitions were read as source, not run. File migration must 
 
 Files read: 2. Full hashes/modes are in the companion JSON.
 
-### sympy — corrected
+### sympy — retained
 
 Read complete symbolic-math guide; fixed missing infinity/trigonometric/operator imports, undefined quantum operator, assumption-leaking examples, nonexistent reference promises and misleading simplify force advice. Added generated-code trust boundary.
 
@@ -132,7 +132,7 @@ Files read: 2. Full hashes/modes are in the companion JSON.
 
 Sources: https://docs.sympy.org/latest/modules/utilities/lambdify.html
 
-### postmortem-writing — corrected
+### postmortem-writing — retained
 
 Read complete entrypoint and evidence-based support playbook; aligned sharing with access controls, replaced forced-five-whys anti-pattern and labeled fictional incident details and evidence gaps.
 
@@ -140,7 +140,7 @@ Limitations: No incident data supplied; ticket creation, notifications and publi
 
 Files read: 2. Full hashes/modes are in the companion JSON.
 
-### swiftui-view-refactor — corrected
+### swiftui-view-refactor — retained
 
 Read entrypoint, agent metadata and full MV reference; preserved architectural preference while correcting wrapper migration and accessible filter interaction. Added cancellation guard so disappeared views do not show cancellation as failure.
 
@@ -148,7 +148,7 @@ Limitations: Application types and services are placeholders; no Apple-platform 
 
 Files read: 3. Full hashes/modes are in the companion JSON.
 
-### policy-library — corrected
+### policy-library — retained
 
 Aligned required acknowledgement flag between SQL/JSON and repaired malformed references; reviewed policy approval/version/empty-template workflow.
 
@@ -164,7 +164,7 @@ Limitations: Normative interface proposal, not a universal standard or a certifi
 
 Files read: 1. Full hashes/modes are in the companion JSON.
 
-### health-wellness — corrected
+### health-wellness — retained
 
 Resolved uptake-only recommendation versus named health-check-in template: removed Employee Name across formats, distinguished optional synthetic survey schema from aggregate default and clarified reidentification/support linkage. Aligned required booleans across SQL/JSON.
 
@@ -172,7 +172,7 @@ Limitations: No medical or legal advice; no health data processed. Aggregation s
 
 Files read: 1. Full hashes/modes are in the companion JSON.
 
-### azure-storage-queue-ts — corrected
+### azure-storage-queue-ts — retained
 
 Read full SDK guide; removed nonexistent JS messageEncoding option, fixed SAS query separator and unquoted secret shell examples, protected payload/pop-receipt logs, repaired overlapping renewal/delete race using serial bounded chunks, and clarified at-least-once/poison-copy semantics.
 
@@ -182,7 +182,7 @@ Files read: 2. Full hashes/modes are in the companion JSON.
 
 Sources: https://learn.microsoft.com/en-us/javascript/api/overview/azure/storage-queue-readme?view=azure-node-latest, https://github.com/Azure/azure-sdk-for-js/blob/main/sdk/storage/storage-queue/src/QueueClient.ts
 
-### robius-state-management — corrected
+### robius-state-management — retained
 
 Read full state/persistence guide; corrected missing type imports, collision/path-prone user directory naming, truncating non-atomic save and fallback that could overwrite unreadable state after backup failure; identified unbundled base patterns. Made window-state replacement atomic and removed implicit working-directory fallback.
 
@@ -190,7 +190,7 @@ Limitations: No Rust build; application-owned types, tempfile dependency, platfo
 
 Files read: 1. Full hashes/modes are in the companion JSON.
 
-### pre-boarding — corrected
+### pre-boarding — retained
 
 Aligned three readiness booleans required by SQL with JSON Schema; repaired malformed references and reviewed date-driven checklist/authorization boundaries.
 
@@ -198,7 +198,7 @@ Limitations: Readiness flags do not provision accounts or prove approvals; IDs m
 
 Files read: 1. Full hashes/modes are in the companion JSON.
 
-### graceful-shutdown — corrected
+### graceful-shutdown — retained
 
 Read full signal/server/worker guide; replaced racy concurrent checkpoint/execute example and unused worker-thread import with bounded process-level draining, success-only acknowledgement and explicit worker-thread/child signaling limits.
 
@@ -206,7 +206,7 @@ Limitations: Application queue/fetch/pool adapters are fragments. No process/orc
 
 Files read: 1. Full hashes/modes are in the companion JSON.
 
-### monorepo-management — corrected
+### monorepo-management — retained
 
 Read full playbook; corrected Turbo2 task schema, Nx commands and exact affected matching, reversed pnpm dependency filter, cache inputs losing config, duplicate/absent export artifacts and broad hoisting. Qualified unbundled resource list and remote-cache/publication boundaries.
 
@@ -216,7 +216,7 @@ Files read: 2. Full hashes/modes are in the companion JSON.
 
 Sources: https://turborepo.dev/docs/crafting-your-repository/upgrading, https://turborepo.dev/docs/reference/configuration, https://nx.dev/docs/reference/nx-commands
 
-### document-management-system — corrected
+### document-management-system — retained
 
 Allowed unsigned/draft documents to omit Signed Date and aligned required signature flag; repaired malformed catalog link. Reviewed document lifecycle and storage boundaries.
 
@@ -224,7 +224,7 @@ Limitations: A register does not store/sign documents or establish signature val
 
 Files read: 1. Full hashes/modes are in the companion JSON.
 
-### protocol-reverse-engineering — corrected
+### protocol-reverse-engineering — retained
 
 Read full playbook; added capture/interception/replay authorization, bounded binary/TLV and Lua parsing, corrected IPv4 assumptions and checksum/length handling, and aligned fuzz fields with big-endian sample format.
 
@@ -232,7 +232,7 @@ Limitations: Offline examples only; TCP reassembly/session replay and encrypted 
 
 Files read: 2. Full hashes/modes are in the companion JSON.
 
-### attendance — corrected
+### attendance — retained
 
 Aligned SQL/JSON required leave/correction flags, rejected negative hours/lateness and separated entered totals from shift/timezone/overnight calculations.
 
@@ -240,7 +240,7 @@ Limitations: Template only; no attendance monitoring, payroll decisions or calcu
 
 Files read: 1. Full hashes/modes are in the companion JSON.
 
-### skyvern-browser-automation — corrected
+### skyvern-browser-automation — retained
 
 Corrected selector-versus-intent no-AI contradiction and unsupported replay speed claim; clarified version/capability prerequisites, secret input and cloud data/transaction verification boundaries.
 
@@ -250,7 +250,7 @@ Files read: 1. Full hashes/modes are in the companion JSON.
 
 Sources: https://github.com/Skyvern-AI/skyvern/blob/main/skyvern/cli/skills/skyvern/references/credentials.md
 
-### chatexport-need-miner — corrected
+### chatexport-need-miner — retained
 
 Corrected impossible memory/source-fidelity guarantees, numeric score and breadth-priority contradiction; clearly separated raw normalized candidate snippets from verified Telegram messages and labeled synthetic quotes/competitor claims.
 
@@ -258,7 +258,7 @@ Limitations: Scanner is not a JSON parser and cannot produce verified counts/quo
 
 Files read: 1. Full hashes/modes are in the companion JSON.
 
-### it-manager-pro — corrected
+### it-manager-pro — retained
 
 Read README, scenarios and both framework/handbook references; aligned eight-persona counts, qualified nonlegal framework categories and removed redundant consent gate for already requested depth. Corrected unsupported cloud-waste statistic and overly narrow PMBOK/NIST descriptions.
 
@@ -266,7 +266,7 @@ Limitations: Personas are analytical lenses, not real independent experts or cer
 
 Files read: 5. Full hashes/modes are in the companion JSON.
 
-### vendor-contractor-management — corrected
+### vendor-contractor-management — retained
 
 Allowed unrated prospects and unknown contract dates instead of invented required values; identified missing owner/access-review fields needed by the stated risk workflow.
 
@@ -274,7 +274,7 @@ Limitations: No vendor due diligence performed; commercial register is not acces
 
 Files read: 1. Full hashes/modes are in the companion JSON.
 
-### esop-equity-tracker — corrected
+### esop-equity-tracker — retained
 
 Corrected example balances implying cliff vesting on grant date; qualified option-specific fields and separated entered balances from unimplemented vesting/valuation derivation. Repaired catalog link.
 
@@ -282,7 +282,7 @@ Limitations: No cap-table, valuation or legal/tax computation; authoritative gra
 
 Files read: 1. Full hashes/modes are in the companion JSON.
 
-### threejs-animation — corrected
+### threejs-animation — retained
 
 Read full guide; fixed numeric track key counts/morph weights, Timer visibility setup, double Clock sampling and bone override ordering, resetDuration semantics, missing rig guard and culling-dependent pause callbacks.
 
@@ -292,7 +292,7 @@ Files read: 2. Full hashes/modes are in the companion JSON.
 
 Sources: https://threejs.org/docs/pages/Timer.html
 
-### code-simplification — corrected
+### code-simplification — retained
 
 Corrected non-equivalent Map refactor that changed result shape and discarded record data; qualified async-wrapper removal because synchronous throws change the error contract.
 
@@ -300,7 +300,7 @@ Limitations: Snippets assume ordinary typed data; behavior preservation needs ca
 
 Files read: 1. Full hashes/modes are in the companion JSON.
 
-### organization-design — corrected
+### organization-design — retained
 
 Repaired malformed routing/reference links and exposed missing currency/FTE/hierarchy semantics required for meaningful headcount/budget/chart use.
 
@@ -308,7 +308,7 @@ Limitations: Baseline department register does not generate a chart, validate hi
 
 Files read: 1. Full hashes/modes are in the companion JSON.
 
-### project-based-performance — corrected
+### project-based-performance — retained
 
 Resolved project-overrun scenario versus individual-appraisal schema mismatch and qualified unsupported comparability/overall-score calculation assumptions.
 
@@ -316,7 +316,7 @@ Limitations: No employees assessed; numeric sample scores are synthetic and do n
 
 Files read: 1. Full hashes/modes are in the companion JSON.
 
-### runbook-creation — corrected
+### runbook-creation — retained
 
 Read full runbook/support guide; repaired split-brain-prone promotion prerequisites, misleading backup-as-rollback, unsafe broad cleanup, predictable/path-injectable log directory and curl/TLS failure handling.
 
@@ -324,7 +324,7 @@ Limitations: No failover/restore/cleanup run. Examples require environment-speci
 
 Files read: 2. Full hashes/modes are in the companion JSON.
 
-### cc-skill-backend-patterns — corrected
+### cc-skill-backend-patterns — retained
 
 Read complete backend guide; repaired missing repository method, reversed similarity ordering, invalid JSON-row SQL transaction/error suppression, broken RBAC invocation, JWT algorithm/issuer/audience/claim checks and retry zero-attempt case; constrained trusted identity/cache/jobs and raw errors.
 
@@ -332,7 +332,7 @@ Limitations: Fragments require actual schemas/adapters/imports and all interface
 
 Files read: 2. Full hashes/modes are in the companion JSON.
 
-### audit-log — corrected
+### audit-log — retained
 
 Aligned sample timestamp with JSON date-time and timezone-aware SQL; corrected redaction timing and exposed append-only/tamper-evidence and field-redaction requirements absent from the simple register.
 
@@ -340,7 +340,7 @@ Limitations: No audit integration or compliance assurance; stable source referen
 
 Files read: 1. Full hashes/modes are in the companion JSON.
 
-### frontend-optimistic-mutations — corrected
+### frontend-optimistic-mutations — retained
 
 Repaired unsafe network-only POST retry advice, fictional auto-idempotency guarantee, missing error notifier and whole-cache rollback clobbering concurrent pending writes; qualified filtered-list membership, newer-write and money-settlement boundaries. Removed the unsafe whole-snapshot restoration entirely from concurrent onError handling; failures invalidate rather than erase newer completed writes.
 
@@ -348,7 +348,7 @@ Limitations: Application-owned API/cache types; no React runtime test. Versioned
 
 Files read: 1. Full hashes/modes are in the companion JSON.
 
-### saas-security-posture — corrected
+### saas-security-posture — retained
 
 Read full SaaS hardening guide; removed unsupported Slack/GAM/GitHub setting endpoints and password-in-argv provisioning; fixed boolean request typing and shell query quoting; replaced automatic root cron/mail setup with scoped report workflow and protected recovery/retention boundaries.
 
@@ -358,7 +358,7 @@ Files read: 1. Full hashes/modes are in the companion JSON.
 
 Sources: https://docs.slack.dev/reference/methods/, https://docs.slack.dev/reference/methods/admin.teams.settings.setDiscoverability/, https://docs.github.com/en/code-security/concepts/security-at-scale/organization-security
 
-### devrel-content — corrected
+### devrel-content — retained
 
 Read README and full content workflow; labeled fictional SDK template as nonrunnable until implemented, removed inline secret assignment, aligned ESM extension and constrained technical verification to inspected authorized fixtures.
 
@@ -366,7 +366,7 @@ Limitations: Content template only; no actual package/API/content metrics verifi
 
 Files read: 2. Full hashes/modes are in the companion JSON.
 
-### health-trend-analyzer — corrected
+### health-trend-analyzer — retained
 
 Read full Chinese health workflow; removed causal/clinical prediction overclaims, universal time/BMI/radiation thresholds and synthetic follow-up directives; corrected CDN/offline privacy contradiction, missing references and pseudocode status; added source/unit/missing-data and safe HTML boundaries.
 
@@ -376,7 +376,7 @@ Files read: 1. Full hashes/modes are in the companion JSON.
 
 Sources: https://www.cdc.gov/bmi/about/, https://medlineplus.gov/lab-tests/how-to-understand-your-lab-results/
 
-### startup-it-troubleshooting — corrected
+### startup-it-troubleshooting — retained
 
 Read full cross-platform guide; removed blind remote installer execution, literal/shared passwords/auth keys and routine MFA disablement; corrected readonly UID misuse, unsafe broad cleanup/reset/reboot defaults, remote-access lockout risk and false gh auth refresh rotation claim.
 
@@ -384,7 +384,7 @@ Limitations: No device/account action executed. Some commands are legacy/version
 
 Files read: 1. Full hashes/modes are in the companion JSON.
 
-### eol-resistor-calculator — corrected
+### eol-resistor-calculator — retained
 
 Read full alarm-loop guide; verified Neo DEOL source and corrected short=fault, ambiguous schematic, invented universal compliance/ADC windows, unverified vendor matrix and unsafe mains-separation implication. Calculator rejects invalid inputs/gauges and explicitly checks only normal-state assumptions; resistance testing requires de-energized isolation. Removed residual brand-wide resistor values from the checklist and pitfall example.
 
@@ -394,7 +394,7 @@ Files read: 1. Full hashes/modes are in the companion JSON.
 
 Sources: https://docs.johnsoncontrols.com/dsc/r/DSC/en-US/PowerSeries-Neo-HS2016/HS2016-4/HS3032/HS2064/HS2064-E/HS2128/HS2129-E-Alarm-Controller-Reference-Manual/1.2/Installation/Installing-Modules/Zone-Wiring/Double-End-of-Line-DEOL-Resistors
 
-### brooks-audit — corrected
+### brooks-audit — retained
 
 Read entrypoint, full architecture guide and onboarding guide; identified missing sibling shared contract/scoring references and constrained independent map/tour use without invented scores or source attributions.
 
@@ -402,7 +402,7 @@ Limitations: Import grep and file samples are discovery hints, not complete depe
 
 Files read: 3. Full hashes/modes are in the companion JSON.
 
-### azure-monitor-audit — corrected
+### azure-monitor-audit — retained
 
 Read full audit guide; corrected retired diagnostic retention, NSG diagnostics mislabeled flow logs, invalid scheduled-query placeholder/count condition and KQL dynamic set conversion; removed unsupported PolicyInsights table and unverified policy GUID assignments. Qualified paid privileges, connectors and ingestion/cap gaps. Replaced positional PIM target indexing with expanded typed target rows, preserving IDs without assuming resource order.
 
@@ -412,7 +412,7 @@ Files read: 1. Full hashes/modes are in the companion JSON.
 
 Sources: https://learn.microsoft.com/cli/azure/monitor/scheduled-query, https://learn.microsoft.com/en-us/azure/network-watcher/nsg-flow-logs-manage, https://learn.microsoft.com/en-us/azure/azure-monitor/platform/migrate-to-azure-storage-lifecycle-policy
 
-### llm-application-dev-prompt-optimize — corrected
+### llm-application-dev-prompt-optimize — retained
 
 Read complete optimization playbook; removed fabricated universal/projected gains and model-quality stereotypes; distinguished self-critique from Constitutional AI training, constrained internal-reasoning requests and fixed unsafe input/sanitization claims.
 
@@ -420,7 +420,7 @@ Limitations: Prompts and score templates are illustrative; no LLM evaluation run
 
 Files read: 2. Full hashes/modes are in the companion JSON.
 
-### cloudformation — corrected
+### cloudformation — retained
 
 Reviewed full template/operations guide; replaced fabricated AMI map use with explicit image input, fixed prod InstanceType override that made update example ineffective, disabled unsent resource signals and corrected group-ID label/circular-dependency advice; identified LB/bootstrap and nested-template prerequisites.
 
@@ -438,7 +438,7 @@ Limitations: No database/LLM execution. Stores/helpers are application-owned ske
 
 Files read: 1. Full hashes/modes are in the companion JSON.
 
-### skill-gap-analysis — corrected
+### skill-gap-analysis — retained
 
 Corrected example with identical current/required levels despite claimed advanced gap; repaired catalog link and identified evidence/rubric/action-owner requirements for a genuine training plan.
 
@@ -446,7 +446,7 @@ Limitations: Template does not assess individuals or infer capability; course ID
 
 Files read: 1. Full hashes/modes are in the companion JSON.
 
-### astropy — corrected
+### astropy — retained
 
 Read entrypoint and all seven bundled reference placeholders; corrected false completeness implication, shell extra quoting and explicit time scales; clarified IERS network/reproducibility and nearest-neighbor/unit assumptions.
 
@@ -456,7 +456,7 @@ Files read: 8. Full hashes/modes are in the companion JSON.
 
 Sources: https://docs.astropy.org/en/stable/utils/iers.html
 
-### angular-ui-patterns — corrected
+### angular-ui-patterns — retained
 
 Read README, metadata and full guide; fixed missing retry/load method, undeclared error/empty-state inputs, unsupported output.observed usage, missing SaveButton feedback and duplicate-submit guards. Qualified fragment dependencies and @defer versus HTTP state.
 
@@ -464,7 +464,7 @@ Limitations: No Angular build; actual component imports/service/router contracts
 
 Files read: 4. Full hashes/modes are in the companion JSON.
 
-### community-building — corrected
+### community-building — retained
 
 Read README and full community guide; corrected absolute report-confidentiality promise and ambiguous member full-access permissions; qualified fabricated health benchmarks and staged moderation/automation consent.
 
@@ -472,7 +472,7 @@ Limitations: No community/admin/bot action executed. Platform/tool availability,
 
 Files read: 2. Full hashes/modes are in the companion JSON.
 
-### metasploit-framework — corrected
+### metasploit-framework — retained
 
 Read full offensive guide as inert source; preserved written-authorization gate and corrected check-as-proof, AV-encoding misconception and contradictory privileged database setup; separated sensitive post-exploitation scope and restoration requirements. Classified active security assessment guidance as offensive and included the exact repository authorization disclaimer and per-command scope gate.
 
@@ -482,7 +482,7 @@ Files read: 1. Full hashes/modes are in the companion JSON.
 
 Sources: https://docs.metasploit.com/docs/using-metasploit/basics/how-to-use-msfvenom.html
 
-### daily — corrected
+### daily — retained
 
 Read full Daily/Pipecat reference; removed unsupported latency and universal adapter/schema compatibility guarantees, qualified SDK/service counts and incomplete fragments, and bounded live-media sharing/tool effects.
 
@@ -500,7 +500,7 @@ Files read: 1. Full hashes/modes are in the companion JSON.
 
 Sources: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-RUM-get-started-authorization.html, https://docs.aws.amazon.com/en_en/AmazonCloudWatch/latest/monitoring/CloudWatch-RUM-resource-policies.html
 
-### ssl-tls-management — corrected
+### ssl-tls-management — retained
 
 Read entrypoint and complete monitoring support; corrected retired Let's Encrypt OCSP assumptions, Apache directive context, unsafe blanket HSTS/preload, SAN-less localhost certificate and token heredoc exposure. Monitoring now returns failure and handles unavailable/malformed dates.
 
@@ -510,7 +510,7 @@ Files read: 2. Full hashes/modes are in the companion JSON.
 
 Sources: https://letsencrypt.org/2024/12/05/ending-ocsp/, https://httpd.apache.org/docs/2.4/mod/mod_ssl.html#sslstaplingcache
 
-### kpi-tracker — corrected
+### kpi-tracker — retained
 
 Corrected inconsistent weighted-score arithmetic and weighting advice; documented formula boundaries and repaired catalog link.
 
@@ -518,7 +518,7 @@ Limitations: Static complete-tree review; examples not executed.
 
 Files read: 1. Full hashes/modes are in the companion JSON.
 
-### linear-claude-skill — corrected
+### linear-claude-skill — retained
 
 Removed guaranteed CLI/helper availability, unsafe credential-output validation and literal credential configuration; updated official MCP transport and scoped project/link/bulk-write assumptions.
 
@@ -528,7 +528,7 @@ Files read: 2. Full hashes/modes are in the companion JSON.
 
 Sources: https://linear.app/docs/mcp
 
-### seo-aeo-schema-generator — corrected
+### seo-aeo-schema-generator — retained
 
 Corrected retired Google feature promises, false required-field rules and Article eligibility; distinguished illustrative templates from validation and replaced string-valued collection placeholders with typed arrays. Documented safe JSON serialization and absent builder.
 
@@ -538,7 +538,7 @@ Files read: 11. Full hashes/modes are in the companion JSON.
 
 Sources: https://developers.google.com/search/updates, https://developers.google.com/search/blog/2023/08/howto-faq-changes, https://developers.google.com/search/blog/2024/10/sitelinks-search-box, https://developers.google.com/search/docs/appearance/structured-data/article, https://developers.google.com/search/docs/appearance/structured-data/product-snippet
 
-### dbt-transformation-patterns — corrected
+### dbt-transformation-patterns — retained
 
 Fixed empty-target/equal-timestamp incremental filters and same-select alias filtering; removed unsupported default/row-count rules and documented adapter, identity, currency, deduplication and late-data prerequisites.
 
@@ -556,7 +556,7 @@ Limitations: Complete tracked pointer reviewed; upstream package behavior and cu
 
 Files read: 1. Full hashes/modes are in the companion JSON.
 
-### leave-management — corrected
+### leave-management — retained
 
 Made unknown leave balances optional in SQL/JSON and clarified snapshot/calendar counting and sensitive reason/contact boundaries; repaired catalog link.
 
@@ -564,7 +564,7 @@ Limitations: Static complete-tree review; examples not executed.
 
 Files read: 1. Full hashes/modes are in the companion JSON.
 
-### mentorship-program — corrected
+### mentorship-program — retained
 
 Fixed example sessions predating the programme and mandatory dates that prevented proposed/closed pairs; documented count, planned-date and feedback boundaries.
 
@@ -580,7 +580,7 @@ Limitations: Complete tracked pointer reviewed; external package implementation,
 
 Files read: 1. Full hashes/modes are in the companion JSON.
 
-### traderspy-market-screener — corrected
+### traderspy-market-screener — retained
 
 Corrected horizon arithmetic and volume/small-cap/cycle claims; qualified live quotas and added actual backtest validity limits.
 
@@ -606,7 +606,7 @@ Limitations: Complete single-file review; no radar file, plotting library or wea
 
 Files read: 1. Full hashes/modes are in the companion JSON.
 
-### html-injection-testing — corrected
+### html-injection-testing — retained
 
 Corrected fake CSS cookie extraction, CSP relaxation and strip_tags defenses; bounded local-lab examples, redirects and candidate reflection evidence. Preserved offensive scope gate. Classified active security assessment guidance as offensive and included the exact repository authorization disclaimer and per-command scope gate.
 
@@ -616,7 +616,7 @@ Files read: 2. Full hashes/modes are in the companion JSON.
 
 Sources: https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP, https://www.php.net/manual/en/function.strip-tags.php
 
-### gemini-live-api-dev — corrected
+### gemini-live-api-dev — retained
 
 Removed literal JS credential and raw event/error logging; corrected always-current/only-source documentation claims and specified real streaming, privacy and tool-action boundaries.
 
@@ -626,7 +626,7 @@ Files read: 1. Full hashes/modes are in the companion JSON.
 
 Sources: https://ai.google.dev/gemini-api/docs/live-api, https://ai.google.dev/gemini-api/docs/live-api/live-translate, https://ai.google.dev/gemini-api/docs/live-api/session-management
 
-### anti-reversing-techniques — corrected
+### anti-reversing-techniques — retained
 
 Fixed pointer-sized debug-port storage, status checks, C allocation return type, unsigned predicate overflow and null FILE handling; removed blind breakpoint-IP increment and qualified architecture-specific layouts/heuristics.
 
@@ -642,7 +642,7 @@ Limitations: Complete tracked pointer reviewed; external package implementation,
 
 Files read: 1. Full hashes/modes are in the companion JSON.
 
-### azure-vms — corrected
+### azure-vms — retained
 
 Removed hard-coded Windows password and disabled-NSG example; corrected LB-probe path and Terraform rolling health/mode/path expansion, and bounded destructive image capture/disk growth with actual prerequisites.
 
@@ -652,7 +652,7 @@ Files read: 2. Full hashes/modes are in the companion JSON.
 
 Sources: https://learn.microsoft.com/en-us/cli/azure/vmss, https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-maxsurge, https://raw.githubusercontent.com/hashicorp/terraform-provider-azurerm/main/website/docs/r/linux_virtual_machine_scale_set.html.markdown
 
-### json-canvas — corrected
+### json-canvas — retained
 
 Distinguished ID convention from specification requirement, handled absent optional arrays and added vault/file/link boundaries while retaining complete reference examples.
 
@@ -662,7 +662,7 @@ Files read: 2. Full hashes/modes are in the companion JSON.
 
 Sources: https://jsoncanvas.org/spec/1.0/
 
-### memory-safety-patterns — corrected
+### memory-safety-patterns — retained
 
 Repaired C++ map race/inserting read, throwing/copied rollback guard, socket deleter/allocation leaks, unsafe generic C cleanup pointer, and Rust read-to-write deadlock/type inference; corrected GC/span/shared_ptr safety claims.
 
@@ -670,7 +670,7 @@ Limitations: Complete tree static review; independent C/C++/Rust fragments not c
 
 Files read: 2. Full hashes/modes are in the companion JSON.
 
-### access-matrix — corrected
+### access-matrix — retained
 
 Replaced person-like values in permission columns and blanket executive/HR grants with scoped examples; specified deny-by-default and observed-versus-intended review evidence.
 
@@ -686,7 +686,7 @@ Limitations: Complete tracked pointer reviewed; external package implementation,
 
 Files read: 1. Full hashes/modes are in the companion JSON.
 
-### unity-ai-game-creator — corrected
+### unity-ai-game-creator — retained
 
 Corrected plan-versus-build claims, unverified editor compatibility and blanket 2D pipeline/save encryption advice; marked schedules/market gaps/budgets as hypotheses and bounded paid/external actions.
 
@@ -694,7 +694,7 @@ Limitations: Static complete-tree review; examples not executed.
 
 Files read: 1. Full hashes/modes are in the companion JSON.
 
-### product-photo-studio — corrected
+### product-photo-studio — retained
 
 Added actual-product fidelity review so generated listing images do not invent product attributes; retained pinned installation, billing, credential and upload controls.
 
@@ -710,7 +710,7 @@ Limitations: Complete tracked pointer reviewed; external package implementation,
 
 Files read: 1. Full hashes/modes are in the companion JSON.
 
-### nextjs-app-router-patterns — corrected
+### nextjs-app-router-patterns — retained
 
 Fixed reversed serialization rule, URLSearchParams number encoding, missing HTTP status check, untrusted-cookie cart identity and mass-assignment writes; added explicit authorization/validation/idempotent payment adapters and current cache invalidation/tag scope.
 
@@ -720,7 +720,7 @@ Files read: 2. Full hashes/modes are in the companion JSON.
 
 Sources: https://nextjs.org/docs/app/api-reference/functions/revalidateTag, https://nextjs.org/docs/app/guides/data-security
 
-### paypal-integration — corrected
+### paypal-integration — retained
 
 Replaced incompatible double-capture/legacy SDK quick start with server-owned Orders flow; corrected raw IPN verification, explicit environment, HTTP bounds/status checks, optional refund amount and secret placeholders; specified atomic financial reconciliation and idempotency.
 
@@ -730,7 +730,7 @@ Files read: 1. Full hashes/modes are in the companion JSON.
 
 Sources: https://developer.paypal.com/docs/checkout/standard/integrate/, https://developer.paypal.com/api/nvp-soap/ipn/ht-ipn/, https://developer.paypal.com/api/rest/reference/idempotency/
 
-### api-onboarding — corrected
+### api-onboarding — retained
 
 Removed unsourced failure percentages/predictive ranking, real-key prefill and unlimited sandbox advice; qualified OAuth/verification, provider test cards and telemetry/TTFAC evidence boundaries.
 
@@ -738,7 +738,7 @@ Limitations: Complete README and entrypoint reviewed; vendor products, benchmark
 
 Files read: 2. Full hashes/modes are in the companion JSON.
 
-### interview-me — corrected
+### interview-me — retained
 
 Removed rejection of ordinary agreement/delegated judgment and manipulative contrary guesses; qualified confidence/stop heuristics and unsupported 10x claim while preserving focused interviews and concrete intent restatement.
 
@@ -754,7 +754,7 @@ Limitations: Complete tracked pointer reviewed; external package implementation,
 
 Files read: 1. Full hashes/modes are in the companion JSON.
 
-### voiceover-narration-studio — corrected
+### voiceover-narration-studio — retained
 
 Specified speaker consent for persistent custom-voice enrollment in the narration workflow; retained pinned source, hosted upload, paid-call, token and route disclosures.
 
@@ -770,7 +770,7 @@ Limitations: Complete tracked pointer reviewed; external package implementation,
 
 Files read: 1. Full hashes/modes are in the companion JSON.
 
-### competency-matrix — corrected
+### competency-matrix — retained
 
 Made optional job grades optional in SQL/JSON, honored already-requested artifacts without another build gate and corrected automatic foreign-key implication.
 
@@ -778,7 +778,7 @@ Limitations: Static complete-tree review; examples not executed.
 
 Files read: 1. Full hashes/modes are in the companion JSON.
 
-### go-concurrency-patterns — corrected
+### go-concurrency-patterns — retained
 
 Repaired uncancellable worker receive/send, false buffer sizing, pipeline idle cancellation, partial semaphore lifecycle, shutdown signal/idempotence, zero-size guards and signed-overflow shard indexing; documented fragment and I/O contracts.
 
@@ -786,7 +786,7 @@ Limitations: Complete tree static review; Go fragments not compiled or race-test
 
 Files read: 2. Full hashes/modes are in the companion JSON.
 
-### neon-ai-gateway — corrected
+### neon-ai-gateway — retained
 
 Corrected stale environment injection/eligibility claims using current docs and explicit server credential/dialect configuration; removed all-endpoint/no-timeout promises and replaced unscoped todo query with user-bound adapter.
 
@@ -796,7 +796,7 @@ Files read: 1. Full hashes/modes are in the companion JSON.
 
 Sources: https://neon.com/docs/ai-gateway/overview, https://neon.com/docs/ai-gateway/authentication
 
-### buddy-program-manager — corrected
+### buddy-program-manager — retained
 
 Made unknown feedback optional, removed universal cadence sufficiency claim and distinguished aggregate counts from the required event log and actual closure.
 
@@ -804,7 +804,7 @@ Limitations: Static complete-tree review; examples not executed.
 
 Files read: 1. Full hashes/modes are in the companion JSON.
 
-### changelog-automation — corrected
+### changelog-automation — retained
 
 Removed conflicting two-publisher workflow, undefined tag output and direct protected-main push; added protected release environment/runtime consistency, quoted hook filename argument and CJS config compatibility; qualified legacy tooling and synthetic release claims.
 
@@ -812,7 +812,7 @@ Limitations: Complete tree static review; no dependency install, workflow, versi
 
 Files read: 2. Full hashes/modes are in the companion JSON.
 
-### paywall-upgrade-cro — corrected
+### paywall-upgrade-cro — retained
 
 Resolved experiment ideas that contradicted anti-dark-pattern rules: hidden prices, fabricated popularity/countdowns and unsupported data-loss urgency. Added truthful recurring-charge and retention terms plus refund/cancellation experiment guardrails.
 
@@ -828,7 +828,7 @@ Limitations: Complete tracked pointer reviewed; external package implementation,
 
 Files read: 1. Full hashes/modes are in the companion JSON.
 
-### multi-agent-patterns — corrected
+### multi-agent-patterns — retained
 
 Removed unsupported universal token/performance/model comparisons and unverified survey attribution; qualified pass-through and self-confidence voting, and specified actual host routing, shared-state ownership and global budgets.
 
@@ -836,7 +836,7 @@ Limitations: Static complete-tree review; no live service or runtime verificatio
 
 Files read: 1. Full hashes/modes are in the companion JSON.
 
-### project-development — corrected
+### project-development — retained
 
 Corrected file-existence completion/idempotency and deterministic-acquisition claims, unsupported case-study guarantees, one-example generalization and parser default fabrication; preserved mandatory external authorization/validation and realistic cost accounting.
 
@@ -844,7 +844,7 @@ Limitations: Static complete-tree review; no live service or runtime verificatio
 
 Files read: 1. Full hashes/modes are in the companion JSON.
 
-### subagent-driven-development — corrected
+### subagent-driven-development — retained
 
 Corrected automatic TDD/parallel-isolation guarantees, missing host/template assumptions and unauthorized commit implication; added exact-head evidence, budgets and direct-review fallback, and removed speed-based reviewer suspicion.
 
@@ -852,7 +852,7 @@ Limitations: Static complete-tree review; no live service or runtime verificatio
 
 Files read: 4. Full hashes/modes are in the companion JSON.
 
-### workflow-patterns — corrected
+### workflow-patterns — retained
 
 Qualified host-specific commands/coverage/checkpoint policy, immutable-plan preference and scope changes; replaced broad staging/revert syntax, false vulnerability-free/semantic-search claims and destructive recovery advice.
 
@@ -860,7 +860,7 @@ Limitations: Static complete-tree review; no live service or runtime verificatio
 
 Files read: 2. Full hashes/modes are in the companion JSON.
 
-### xss-html-injection — corrected
+### xss-html-injection — retained
 
 Corrected HttpOnly/no-cors/SameSite misconceptions, encoded-hash example and universal cookie-exfiltration claims; replaced cookie quick-reference with harmless marker and bounded delivery/stored-payload evidence. Classified active security assessment guidance as offensive and included the exact repository authorization disclaimer and per-command scope gate.
 
@@ -876,7 +876,7 @@ Limitations: Complete tracked pointer reviewed; external package implementation,
 
 Files read: 1. Full hashes/modes are in the companion JSON.
 
-### deployment-validation-config-validate — corrected
+### deployment-validation-config-validate — retained
 
 Repaired missing Ajv schema registration/Jest import, unsafe type coercion/URL substring exemption, invalid-config activation and secret event payloads; fixed migration ordering/deepcopy/downgrade, encryption algorithm/key envelope and array recursion.
 
@@ -884,7 +884,7 @@ Limitations: Complete tree static review; remaining named application helpers an
 
 Files read: 2. Full hashes/modes are in the companion JSON.
 
-### docker-expert — corrected
+### docker-expert — retained
 
 Corrected masked scan failures, secret-emitting Compose validation, absent development stage, find precedence and Alpine-to-Debian native module incompatibility; made build/runtime side effects and cleanup explicit.
 
@@ -908,7 +908,7 @@ Limitations: Complete single-file static review; no wiki operation, filesystem s
 
 Files read: 1. Full hashes/modes are in the companion JSON.
 
-### scanning-tools — corrected
+### scanning-tools — retained
 
 Removed nonexistent Nessus scan CLI, Internet-wide default and auto-delete antivirus example; corrected ZAP image/baseline scope/API-key handling, Prowler service selector, quoted NSE glob and safe local stylesheet conversion. Classified active security assessment guidance as offensive and included the exact repository authorization disclaimer and per-command scope gate.
 
@@ -918,7 +918,7 @@ Files read: 2. Full hashes/modes are in the companion JSON.
 
 Sources: https://www.zaproxy.org/docs/docker/about/, https://docs.tenable.com/nessus/command-line-reference/Content/nessuscli.htm, https://docs.prowler.com/projects/prowler-open-source/en/latest/tutorials/aws/
 
-### cmux — corrected
+### cmux — retained
 
 Resolved contradictory list-surfaces command and shell-pipeline alternatives, removed assumed user model/polling setup, forced CLI replacement and broad socket-mode fallback; constrained input/close/auth-state/host-hook operations to owned targets.
 
@@ -926,7 +926,7 @@ Limitations: Complete single-file static review; local cmux version, socket API 
 
 Files read: 1. Full hashes/modes are in the companion JSON.
 
-### git-pr-workflows-onboard — corrected
+### git-pr-workflows-onboard — retained
 
 Qualified claimed orchestration, delivery/readiness and fixed budget/PR targets; added actual provisioning/privacy boundaries and corrected overfull afternoon schedule.
 
@@ -934,7 +934,7 @@ Limitations: Static complete-tree review; examples not executed.
 
 Files read: 1. Full hashes/modes are in the companion JSON.
 
-### code-review-excellence — corrected
+### code-review-excellence — retained
 
 Fixed React callback dependency and unvalidated JSON success example, conditional-approval wording and missing support-file claims; distinguished reviewability heuristics from hard limits and exact-head evidence from report claims.
 
@@ -942,7 +942,7 @@ Limitations: Static complete-tree review; no live service or runtime verificatio
 
 Files read: 2. Full hashes/modes are in the companion JSON.
 
-### frontend-lighthouse — corrected
+### frontend-lighthouse — retained
 
 Fixed misplaced aggregation option with supported per-assertion median, removed nonexistent default INP audit and TBT=INP claim; qualified noise/field/accessibility guarantees and actual required-check/path/dependency triggers. Removed residual experimental INP audit and field-certification wording from comments/checklist.
 
@@ -952,7 +952,7 @@ Files read: 1. Full hashes/modes are in the companion JSON.
 
 Sources: https://raw.githubusercontent.com/GoogleChrome/lighthouse-ci/main/docs/configuration.md
 
-### azure-search-documents-py — corrected
+### azure-search-documents-py — retained
 
 Removed credential placeholders/Ellipsis vector, corrected false upload success, semantic-caption request, vector searchable flag and async credential; made actual index/filter/suggester/enrichment/preview dependencies and tenant authorization explicit.
 
@@ -962,7 +962,7 @@ Files read: 2. Full hashes/modes are in the companion JSON.
 
 Sources: https://learn.microsoft.com/en-us/python/api/azure-search-documents/azure.search.documents.searchclient?view=azure-python
 
-### browser-testing-with-devtools — corrected
+### browser-testing-with-devtools — retained
 
 Corrected project-code trust marker, unnecessary per-link/click approval loops, universal warning failure and contrast threshold; added pinned installation/debug endpoint and runtime-evidence boundaries.
 
@@ -978,7 +978,7 @@ Limitations: Complete tracked pointer reviewed; external package implementation,
 
 Files read: 1. Full hashes/modes are in the companion JSON.
 
-### culture-retention — corrected
+### culture-retention — retained
 
 Removed default named survey identity, aligned required anonymity flag and optional unanswered scores, corrected contradictory closed/live sample and clarified aggregation/reidentification and human-only retention hypotheses.
 
@@ -986,7 +986,7 @@ Limitations: Static complete-tree review; no live service or runtime verificatio
 
 Files read: 1. Full hashes/modes are in the companion JSON.
 
-### hunt-ato — corrected
+### hunt-ato — retained
 
 Corrected account-ownership contradiction, 9/11 path count, cross-origin Referer and OOB-token proof claims, arbitrary expiry/token policy and categorical severity; bounded credential/recovery/claiming tests and distinguished password persistence from MFA bypass. Classified active security assessment guidance as offensive and included the exact repository authorization disclaimer and per-command scope gate.
 
@@ -1012,7 +1012,7 @@ Limitations: Complete tracked pointer reviewed; external package implementation,
 
 Files read: 1. Full hashes/modes are in the companion JSON.
 
-### shodan-reconnaissance — corrected
+### shodan-reconnaissance — retained
 
 Corrected private-range indexed scanning, ownership/no-auth/self-signed/host-total/transport inferences; removed literal API keys and unlimited download defaults, and qualified historical plan/CLI claims. Classified active security assessment guidance as offensive and included the exact repository authorization disclaimer and per-command scope gate.
 
@@ -1022,7 +1022,7 @@ Files read: 2. Full hashes/modes are in the companion JSON.
 
 Sources: https://developer.shodan.io/api, https://cli.shodan.io/
 
-### brooks-sweep — corrected
+### brooks-sweep — retained
 
 Made missing shared taxonomy/config/scoring prerequisites explicit, removed unsupported clean/health claims and line-sensitive retry identity, bounded critical loops and preserved unrelated work/actual test coverage.
 
@@ -1030,7 +1030,7 @@ Limitations: Complete entrypoint and sweep guide reviewed; no upstream books/tax
 
 Files read: 2. Full hashes/modes are in the companion JSON.
 
-### microsoft-azure-webjobs-extensions-authentication-events-dotnet — corrected
+### microsoft-azure-webjobs-extensions-authentication-events-dotnet — retained
 
 Corrected in-process/isolated host mismatch, false stable-version and no-op OTP success, whitespace/domain validation, HTTP disposal/deadline and deserialization; specified Entra callback validation and fail-closed required-claim policy. Replaced incorrect token response construction with the official request.Response/Completed/Failed pattern and removed fabricated event action/OTP no-op implementations.
 
@@ -1048,7 +1048,7 @@ Limitations: Complete tracked pointer reviewed; external package implementation,
 
 Files read: 1. Full hashes/modes are in the companion JSON.
 
-### k6-load-testing — corrected
+### k6-load-testing — retained
 
 Repaired JSON login headers/failure handling, browser scenario options/locator calls and nonexistent Chromium/memory commands; fixed CSV empty rows, explicit threshold abort, CI artifacts/setup and Prometheus output, with scoped synthetic load/cost boundaries.
 
@@ -1058,7 +1058,7 @@ Files read: 2. Full hashes/modes are in the companion JSON.
 
 Sources: https://grafana.com/docs/k6/latest/using-k6-browser/running-browser-tests/, https://grafana.com/docs/k6/latest/results-output/real-time/prometheus-remote-write/
 
-### track-management — corrected
+### track-management — retained
 
 Added missing Conductor command dependency/fallback, immutable-plan/shared-registry/path boundaries and ID collision handling; clarified authorized skips/checkpoints and explicit commit-based revert scope.
 
@@ -1066,7 +1066,7 @@ Limitations: Static complete-tree review; no live service or runtime verificatio
 
 Files read: 2. Full hashes/modes are in the companion JSON.
 
-### unified-ai-gateway — corrected
+### unified-ai-gateway — retained
 
 Removed unsafe host tar permission-preserving extraction and implied unbundled verifier availability/current-release certainty; required reviewed bounded link/path-safe extraction and actual complete source/dependency inspection beyond grep inventory. Made the extraction gate executable/fail-closed before any downstream filesystem inventory.
 
@@ -1082,7 +1082,7 @@ Limitations: Complete README/entrypoint review; no vendor recommendation, servic
 
 Files read: 2. Full hashes/modes are in the companion JSON.
 
-### azure-sql — corrected
+### azure-sql — retained
 
 Replaced hard-coded SQL passwords with Entra-only provisioning, removed broad Azure firewall default and secret-bearing incompatible export; fixed restore source name, fake auto-tuning tag and wrong SQL-VM assessment command; clarified private DNS/state/DR/throughput prerequisites. Replaced a nonexistent automatic-tuning CLI example with documented authenticated T-SQL and added the required manual-to-autoscale migration before changing max throughput.
 
@@ -1092,7 +1092,7 @@ Files read: 2. Full hashes/modes are in the companion JSON.
 
 Sources: https://learn.microsoft.com/en-us/cli/azure/sql/server?view=azure-cli-latest, https://learn.microsoft.com/en-us/cli/azure/sql/db?view=azure-cli-latest, https://learn.microsoft.com/en-us/cli/azure/sql/db/automatic-tuning?view=azure-cli-latest, https://learn.microsoft.com/en-us/azure/azure-sql/database/automatic-tuning-enable?view=azuresql, https://learn.microsoft.com/en-us/cli/azure/cosmosdb/sql/container/throughput?view=azure-cli-latest
 
-### offboarding-exit — corrected
+### offboarding-exit — retained
 
 Repaired broken routing links, aligned required completion flags with SQL, and allowed unknown rehire eligibility while distinguishing access evidence from a checkbox.
 
@@ -1100,7 +1100,7 @@ Limitations: Static complete-tree review; examples not executed.
 
 Files read: 1. Full hashes/modes are in the companion JSON.
 
-### time-tracking — corrected
+### time-tracking — retained
 
 Replaced an erroneous Billable relation with a boolean across formats and reconciled hours, rate, amount and date-derived example values.
 
@@ -1108,7 +1108,7 @@ Limitations: Static complete-tree review; examples not executed.
 
 Files read: 1. Full hashes/modes are in the companion JSON.
 
-### complexity-cuts — corrected
+### complexity-cuts — retained
 
 Corrected false constant-space/full-clone and concurrency complexity claims; preserved first-match duplicate semantics in the canonical hash-map rewrite and stated its ID/effect contract.
 
@@ -1116,7 +1116,7 @@ Limitations: Static complete-tree review; examples not executed.
 
 Files read: 1. Full hashes/modes are in the companion JSON.
 
-### tcm-constitution-analyzer — corrected
+### tcm-constitution-analyzer — retained
 
 Removed unverified highest-score diagnostic classification and personalized herbal dosing; documented missing scale/data dependencies, scoring validation, nonclinical synthetic examples, privacy and urgent-symptom limits.
 
@@ -1126,7 +1126,7 @@ Files read: 2. Full hashes/modes are in the companion JSON.
 
 Sources: https://www.nccih.nih.gov/health/traditional-chinese-medicine-what-you-need-to-know
 
-### threejs-textures — corrected
+### threejs-textures — retained
 
 Updated UV channel selection and obsolete power-of-two guidance, retained the PMREM target for disposal, qualified gainmap support and documented shared-cache/resource ownership constraints.
 
@@ -1144,7 +1144,7 @@ Limitations: Reviewed the complete tracked pointer only; external package, diges
 
 Files read: 1. Full hashes/modes are in the companion JSON.
 
-### security-scanning-security-sast — corrected
+### security-scanning-security-sast — retained
 
 Fixed path-prefix and argument-injection examples, corrected Bandit thresholds/config and ESLint package/config, removed broken scanner wrapper and false security score, and preserved scanner failures/raw GitLab artifact semantics.
 
@@ -1162,7 +1162,7 @@ Limitations: Complete tracked pointer read; external package identity, hosted se
 
 Files read: 1. Full hashes/modes are in the companion JSON.
 
-### expense-management — corrected
+### expense-management — retained
 
 Allowed unpaid claims without a fabricated payment date, aligned required receipt flag and repaired catalog link; reconciled synthetic approved/unpaid example and clarified tax/approval evidence limits.
 
@@ -1170,7 +1170,7 @@ Limitations: Static complete-tree review; examples not executed.
 
 Files read: 1. Full hashes/modes are in the companion JSON.
 
-### free-tier-strategy — corrected
+### free-tier-strategy — retained
 
 Replaced stale vendor entitlement/fee tables with explicitly hypothetical model comparisons, removed universal conversion/free-tier claims, and reconciled hard cost caps with upgrade UX and basic security access.
 
@@ -1178,7 +1178,7 @@ Limitations: Static full-tree editorial review; no vendor pricing or conversion-
 
 Files read: 2. Full hashes/modes are in the companion JSON.
 
-### pdf-conversion-router — corrected
+### pdf-conversion-router — retained
 
 Added missing input/output CLI arguments, distinguished DOCX reconstruction from extraction formats, and gated hybrid backend disclosure while preserving meaningful images and value-level validation.
 
@@ -1188,7 +1188,7 @@ Files read: 1. Full hashes/modes are in the companion JSON.
 
 Sources: https://github.com/opendataloader-project/opendataloader-pdf
 
-### qrx — corrected
+### qrx — retained
 
 Removed unconditional scan/size guarantees, fixed retry examples to retain one request key, bounded polling and documented hosted redirect and secret-URL limits.
 
@@ -1196,7 +1196,7 @@ Limitations: Complete tracked tree read; service schemas, availability and decod
 
 Files read: 3. Full hashes/modes are in the companion JSON.
 
-### goal-analyzer — corrected
+### goal-analyzer — retained
 
 Corrected baseline-relative progress and elapsed-date arithmetic, removed fixed-day habit certainty and causal interpretation of correlations, documented missing implementation/data and qualified health thresholds/offline reports.
 
@@ -1206,7 +1206,7 @@ Files read: 2. Full hashes/modes are in the companion JSON.
 
 Sources: https://www.cdc.gov/healthy-weight-growth/losing-weight/index.html
 
-### technical-tutorials — corrected
+### technical-tutorials — retained
 
 Removed indiscriminate force-kill and credential-history examples, corrected SecureString/env guidance, bound demo servers locally and distinguished tested runnable examples from incremental templates/platform claims.
 
@@ -1214,7 +1214,7 @@ Limitations: Static complete-tree review; no live service or runtime verificatio
 
 Files read: 3. Full hashes/modes are in the companion JSON.
 
-### probation-tracker — corrected
+### probation-tracker — retained
 
 Allowed unknown future scores, aligned required boolean fields and corrected the synthetic equal-weight overall score/date narrative; preserved human outcome decision and rubric requirements.
 
@@ -1222,7 +1222,7 @@ Limitations: Static complete-tree review; no live service or runtime verificatio
 
 Files read: 1. Full hashes/modes are in the companion JSON.
 
-### cc-skill-frontend-patterns — corrected
+### cc-skill-frontend-patterns — retained
 
 Fixed stale fetch/HTTP handling and mutating sort, removed the render-looping custom query hook, guarded empty keyboard selection and stopped error disclosure; labeled incomplete accessible-widget/form integration contracts.
 
@@ -1230,7 +1230,7 @@ Limitations: Static complete-tree review; no live service or runtime verificatio
 
 Files read: 2. Full hashes/modes are in the companion JSON.
 
-### okr-system — corrected
+### okr-system — retained
 
 Repaired routing links, optionalized unused second/third KR progress, reconciled Q3 dates and equal-weight overall progress, and distinguished template capacity from enforced hierarchy/scoring behavior.
 
@@ -1238,7 +1238,7 @@ Limitations: Static complete-tree review; no live service or runtime verificatio
 
 Files read: 1. Full hashes/modes are in the companion JSON.
 
-### robius-matrix-integration — corrected
+### robius-matrix-integration — retained
 
 Fixed room sender field mismatch and request submission that silently dropped/not-ready writes or panicked; preserved reply drafts and replaced copied untrusted-device defaults with explicit trust policy and protected persistent key handling.
 
@@ -1246,7 +1246,7 @@ Limitations: Full tracked inline tree read; external supporting files absent, ve
 
 Files read: 1. Full hashes/modes are in the companion JSON.
 
-### disciplinary-pip-tracker — corrected
+### disciplinary-pip-tracker — retained
 
 Allowed open cases without a fabricated closure date, removed public confidentiality defaults, corrected pending-investigation outcome and repaired catalog routing; distinguished allegations, access labels and authorized findings.
 
@@ -1254,7 +1254,7 @@ Limitations: Static complete-tree review; examples not executed.
 
 Files read: 1. Full hashes/modes are in the companion JSON.
 
-### it-manager-hospital — corrected
+### it-manager-hospital — retained
 
 Replaced compliance/zero-downtime assurances, corrected CSF 2.0 functions, guarded clinical pilots and outage actions, distinguished pseudonymization from anonymization and qualified version-dependent accreditation/credential claims.
 
@@ -1264,7 +1264,7 @@ Files read: 5. Full hashes/modes are in the companion JSON.
 
 Sources: https://www.nist.gov/cyberframework
 
-### bun-development — corrected
+### bun-development — retained
 
 Corrected async test syntax/imports, current lockfile/types and Node compatibility claims; removed partial-review auto-installer execution and destructive migration, fixed local demo exposure/error disclosure and unsupported asset flag.
 
@@ -1274,7 +1274,7 @@ Files read: 2. Full hashes/modes are in the companion JSON.
 
 Sources: https://bun.sh/docs/installation, https://bun.sh/docs/runtime/nodejs-compat, https://bun.sh/docs/pm/lockfile
 
-### solidity-security — corrected
+### solidity-security — retained
 
 Fixed replayable same-block commit/reveal, OpenZeppelin v5 import/owner initialization and undeclared balance example; replaced non-executable mixed-version tests with concrete fixture requirements and exposed omitted economic/security contracts.
 
@@ -1284,7 +1284,7 @@ Files read: 2. Full hashes/modes are in the companion JSON.
 
 Sources: https://docs.openzeppelin.com/contracts/5.x/api/utils, https://docs.openzeppelin.com/contracts/5.x/access-control
 
-### payroll-finance — corrected
+### payroll-finance — retained
 
 Corrected DA from text to currency across formats, allowed unpaid records without fabricated payment dates, repaired links and reconciled the synthetic period/arithmetic with register-only scope.
 
@@ -1292,7 +1292,7 @@ Limitations: Static complete-tree review; examples not executed.
 
 Files read: 1. Full hashes/modes are in the companion JSON.
 
-### beatra-ai-video-studio — corrected
+### beatra-ai-video-studio — retained
 
 Clarified that the fixed sample request ID must be unique per separate job and retained on retries, and added full-clip continuity/likeness/publication review.
 

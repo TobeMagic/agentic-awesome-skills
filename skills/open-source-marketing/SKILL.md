@@ -105,11 +105,11 @@ npm install project-name
 
 ## Contributing
 
-We love contributions! See [CONTRIBUTING.md](CONTRIBUTING.md).
+We love contributions! See the project’s `CONTRIBUTING.md` (replace with a verified project link when publishing).
 
 ## License
 
-[License type] - see [LICENSE](LICENSE)
+[License type] - see the project’s `LICENSE` (replace with a verified project link when publishing).
 ```
 
 ### README Checklist
