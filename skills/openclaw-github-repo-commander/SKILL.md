@@ -29,7 +29,7 @@ A structured 7-stage super workflow for comprehensive GitHub repository manageme
 Clone the target repository, define success criteria, and establish baseline metrics.
 
 ### Stage 2: Execution
-Run `scripts/repo-audit.sh <repo-path>` from this skill directory — automated read-only checks for:
+Run `bash scripts/repo-audit.sh <repo-path>` from this skill directory — automated read-only checks for:
 - Hardcoded secrets (`ghp_`, `sk-`, `AKIA`, etc.)
 - Tracked `node_modules/` or build artifacts
 - Empty directories
