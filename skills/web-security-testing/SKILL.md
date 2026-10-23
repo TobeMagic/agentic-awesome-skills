@@ -2,7 +2,7 @@
 name: web-security-testing
 description: "Web application security testing workflow for OWASP Top 10 vulnerabilities including injection, XSS, authentication flaws, and access control issues."
 category: granular-workflow-bundle
-risk: safe
+risk: critical
 source: personal
 date_added: "2026-02-27"
 ---
@@ -21,6 +21,10 @@ Use this workflow when:
 - Conducting penetration tests
 - Validating security controls
 - Bug bounty hunting
+
+## Authorized assessment scope
+
+Before active tests, establish authorized hosts, accounts, test window, request limits, excluded paths and stop conditions. Bug-bounty participation alone does not authorize every listed test. Use synthetic accounts/data and non-destructive probes; credential stuffing, brute-force, stored payloads and automated scanners require explicit scope. Stop on instability or unexpected sensitive data, retain only redacted minimal evidence, and report untested areas instead of marking full coverage.
 
 ## Workflow Phases
 
@@ -155,7 +159,9 @@ Use @api-security-best-practices to audit security headers
 Use @reporting-standards to create security report
 ```
 
-## OWASP Top 10 Checklist
+## OWASP Top 10 (2021) Checklist
+
+This is the 2021 taxonomy; select the edition required by the assessment and map coverage explicitly. A checklist is not proof every category was tested.
 
 - [ ] A01: Broken Access Control
 - [ ] A02: Cryptographic Failures
