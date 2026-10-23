@@ -20,7 +20,7 @@ Help developers write and edit EAS CI/CD workflow YAML files.
 
 ## Local helper behavior and deployment scope
 
-This tree bundles fetch.js, validate.js and package.json, not installed dependencies. Inspect them before execution: fetch accepts arbitrary URLs, follows platform redirects, caches text under scripts/.cache and has no built-in timeout/response-size limit. Use only the fixed official resources below over HTTPS within a bounded network environment; never pass untrusted/private URLs or credentials. Validation fetches live schema and parses local YAML; record retrieval time/schema identity because results can change. Node must support import.meta.dirname/main, and installation needs reviewed compatible dependencies. Structural validation does not run the workflow, prove secret isolation, or authorize billable builds, submission, deployment or recurring triggers.
+This tree bundles fetch.js, validate.js and package.json, not installed dependencies. Inspect them before execution: fetch accepts arbitrary URLs, follows platform redirects, caches text in a runtime-generated .cache directory beside the fetch helper and has no built-in timeout/response-size limit. Use only the fixed official resources below over HTTPS within a bounded network environment; never pass untrusted/private URLs or credentials. Validation fetches live schema and parses local YAML; record retrieval time/schema identity because results can change. Node must support import.meta.dirname/main, and installation needs reviewed compatible dependencies. Structural validation does not run the workflow, prove secret isolation, or authorize billable builds, submission, deployment or recurring triggers.
 
 ## Reference Documentation
 
