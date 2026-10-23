@@ -390,6 +390,8 @@ Sources: https://docs.bullmq.io/guide/connections, https://docs.bullmq.io/guide/
 
 Read full skill and risk-math reference; corrected worked-example distance band and constrained inaccurate current-liquidation/funding/P&L assumptions.
 
+Additional correction: removed leverage-only liquidation estimates and universal ATR safety bands; fixed percent-unit funding conversion and notional versus margin annualization.
+
 Limitations: No live position or market data retrieved; hosted quotas/product support unverified, approximate liquidation excluded without exchange value.
 
 ### jenkins — corrected

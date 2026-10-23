@@ -1155,7 +1155,7 @@
     {
       "id": "traderspy-position-check",
       "disposition": "corrected",
-      "reviewNote": "Read full skill and risk-math reference; corrected worked-example distance band and constrained inaccurate current-liquidation/funding/P&L assumptions.",
+      "reviewNote": "Read full skill and risk-math reference; corrected worked-example distance band and constrained inaccurate current-liquidation/funding/P&L assumptions. Removed leverage-only liquidation estimate and universal ATR safety bands; fixed percent-unit funding conversion and notional versus margin annualization.",
       "limitations": "No live position or market data retrieved; hosted quotas/product support unverified, approximate liquidation excluded without exchange value.",
       "files": [
         {
@@ -1171,7 +1171,7 @@
           "path": "skills/traderspy-position-check/references/risk-math.md",
           "gitMode": "100644",
           "beforeSha256": "670d5a4319497d8f021a3361b7920c652a356886d7f13f4bfd0ab96e0eb32aab",
-          "afterSha256": "7ea8c34983d6195a3beef5c9fadaf1de1eaa2f5e4571754686753d98f880b5e5",
+          "afterSha256": "f4c2d5c914ca6f52744d0abfba87c7ac953a00092532f1c8a537cc551497bfdf",
           "readInFull": true,
           "beforeGitMode": "100644",
           "afterGitMode": "100644"
