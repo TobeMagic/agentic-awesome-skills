@@ -47,7 +47,7 @@ LONG ETH 10x cross, entry 2,434, mark 2,534, liq 2,290, stop 2,380, ATR(4h) 62, 
 +0.002%/8h, OI regime `new_longs`, top traders 55% long.
 
 - Price move +4.1%, on margin ≈ +41%.
-- Liquidation 9.6% away → comfortable.
+- Liquidation 9.6% away → watch.
 - Stop 6.1% / 2.5 ATR away → outside 4h noise.
 - Funding ≈ 0.006%/day → negligible cost for a long (≈ 2% APR).
 - Chart 4h bullish, 1d neutral → mixed; the 4h is doing the work.
