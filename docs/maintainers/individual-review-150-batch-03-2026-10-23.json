@@ -673,22 +673,22 @@
     {
       "id": "android_ui_verification",
       "disposition": "corrected",
-      "reviewNote": "Reviewed guide and complete shell helper; corrected selected-emulator ambiguity, physical-size coordinate assumption and fixed-delay verification. Helper now fails on collection errors, requires explicit serial and validates artifact basename to prevent traversal; no matching JS lines remains valid.",
+      "reviewNote": "Reviewed guide and complete shell helper; corrected selected-emulator ambiguity, physical-size coordinate assumption and fixed-delay verification. Helper now fails on collection errors, requires explicit serial and validates artifact basename to prevent traversal; no matching JS lines remains valid. Follow-up CI repair: bundled helper stored as inert mode 100644 with explicit bash invocation and concrete artifact-inspection example.",
       "limitations": "Static shell review and bash -n only; no emulator/device interactions or UI result claimed. Capture files/logs can contain private screen and app data.",
       "files": [
         {
           "path": "skills/android_ui_verification/SKILL.md",
           "gitMode": "100644",
           "beforeSha256": "3e3ba09ac89c195ef2c81d632349f94c1677fa9631eebf7fad97d8d9ff612105",
-          "afterSha256": "ead7daaa81d1f22ada08ca8a3960a169b6219531842d144a2284f66fcd32666b",
+          "afterSha256": "4d1b7334ef114e6adcc701e412e434f703d7f45226500e39d4275e1224962b1c",
           "afterGitMode": "100644"
         },
         {
           "path": "skills/android_ui_verification/scripts/verify_ui.sh",
           "gitMode": "100755",
           "beforeSha256": "048ddd53e245488ce9b6dc387fca2623864c24e3721d7313003d56dd420e23b1",
-          "afterSha256": "6deee9d19d4a7ab01cb4f8d3c19e7a20f419f9d9b42d42c33aef8b520ccf5439",
-          "afterGitMode": "100755"
+          "afterSha256": "edb5f2431458911e1d642bc2ede742877c12aeb9f66938bff97205e83ac75151",
+          "afterGitMode": "100644"
         }
       ],
       "sources": []
@@ -1170,14 +1170,14 @@
     {
       "id": "distribute-skill-to-all-agents",
       "disposition": "corrected",
-      "reviewNote": "Reviewed complete distribution guide; replaced upstream-personal path/symlink assertions and byte-count equality check with actual configured-host discovery, resolved-link boundaries, divergence backup, file/hash/mode comparison and session reload distinction.",
+      "reviewNote": "Reviewed complete distribution guide; replaced upstream-personal path/symlink assertions and byte-count equality check with actual configured-host discovery, resolved-link boundaries, divergence backup, file/hash/mode comparison and session reload distinction. Follow-up CI repair: added concrete one-tree rsync preview/copy/verification example grounded in the existing distribution workflow.",
       "limitations": "Static complete-tree review only; no target execution, live service test or independent upstream license audit. Metadata preserved.",
       "files": [
         {
           "path": "skills/distribute-skill-to-all-agents/SKILL.md",
           "gitMode": "100644",
           "beforeSha256": "e763b8aaafbe036f6791e2a746271c87d3f443865cf99abf07e392f7394f2181",
-          "afterSha256": "9435726809f0d79fd831fb2d130f31373346d2fc452f65789260be396c3ab3df",
+          "afterSha256": "14f3647b9364e24c809e199ff1142d4f9c5efe078866a8e341ea19147d253478",
           "afterGitMode": "100644"
         }
       ],

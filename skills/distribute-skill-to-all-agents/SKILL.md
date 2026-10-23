@@ -50,3 +50,12 @@ Repeat the same source/target, divergence, backup and whole-tree verification pr
 
 - Adapted from `davidondrej/skills`; verify local paths, tools, credentials, and agent features before acting.
 - For commands, remote access, scheduling, browser automation, or file-changing workflows, get explicit user approval and confirm the target environment first.
+
+## Example: distribute one reviewed skill
+
+The user requests the reviewed `release-notes` skill for their already-configured Claude host. The canonical source is `/workspace/team-skills/release-notes`; the verified host skill folder is `$HOME/.claude/skills`.
+
+1. Inspect `ls -ld "$HOME/.claude/skills" "$HOME/.claude/skills/release-notes"` (an absent skill target is expected for a first install). Resolve the parent and source paths; if the destination already resolves to the source, skip copying and verify discovery instead.
+2. For an independent existing destination, compare its whole tree to the source and privately back it up before resolving divergence. For a new target, preview `rsync -an --itemize-changes /workspace/team-skills/release-notes/ "$HOME/.claude/skills/release-notes/"`. Confirm the preview includes only that reviewed tree.
+3. Apply the same narrowly scoped copy with `rsync -a /workspace/team-skills/release-notes/ "$HOME/.claude/skills/release-notes/"`. These commands omit deletion: obsolete destination files require a separate explicit deletion preview.
+4. Compare all relative paths, file hashes, modes and symlink targets against the source, then use the configured Claude host’s documented discovery/reload mechanism. Report the verified installed tree and whether the active session actually discovered it. No other host folder is created by this example.

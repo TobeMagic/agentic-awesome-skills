@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Helper script for Android UI Verification Skill
-# Usage: ANDROID_SERIAL=<authorized-emulator> ./verify_ui.sh [screenshot_name]
+# Usage: ANDROID_SERIAL=<authorized-emulator> bash scripts/verify_ui.sh [screenshot_name]
 set -euo pipefail
 
 ARTIFACTS_DIR="./artifacts"

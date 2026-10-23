@@ -69,3 +69,7 @@ Always store generated files in the `artifacts/` folder to satisfy project organ
 - Use this skill only when the task clearly matches the scope described above.
 - Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
 - Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.
+
+## Bundled helper example
+
+From this skill’s directory, after selecting the authorized emulator, run `ANDROID_SERIAL=emulator-5554 bash scripts/verify_ui.sh login-screen`. Replace the example serial with the verified device. The inert, non-executable helper captures `artifacts/view.xml`, `artifacts/login-screen.png` and recent JS logs; it does not assert that the login flow passed. Inspect the captured state against the expected UI and keep artifacts private when they contain personal data.
